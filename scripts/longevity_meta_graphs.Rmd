@@ -1,0 +1,22 @@
+---
+title: "longevity_meta_graphs"
+author: "Don Radcliffe"
+date: "6/7/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r read data, load packages, message = FALSE}
+require(here)
+require(dplyr)
+require(ggplot2)
+
+import_dir_ma <- here::here('data')
+export_dir_ma <- here::here('plots')
+
+raw <- read.csv(file.path(import_dir_ma, 'web_plot_digitizer_data.csv'))
+head(raw)
+```
