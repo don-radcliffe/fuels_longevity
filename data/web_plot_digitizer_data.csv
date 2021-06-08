@@ -1,6 +1,6 @@
 value,variable,units,years_post,treatment,study,forest_type,region,burn_season,thin_type,other,other2
-0.34,fwd,kg/m2,12,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-0.33,fwd,kg/m2,22,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
+0.34,fwd,kg/m2,12,control,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
+0.33,fwd,kg/m2,22,control,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 0.63,fwd,kg/m2,12,thin,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 0.33,fwd,kg/m2,22,thin,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 0.82,fwd,kg/m2,0,thinburn,hood,ponderosa,interior_pnw,spring,commercial,NA,NA
@@ -11,8 +11,8 @@ value,variable,units,years_post,treatment,study,forest_type,region,burn_season,t
 0.35,fwd,kg/m2,1,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
 0.41,fwd,kg/m2,12,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
 0.20,fwd,kg/m2,22,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
-0.57,fwd,kg/m2,12,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-0.53,fwd,kg/m2,22,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
+0.57,fwd,kg/m2,12,control,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
+0.53,fwd,kg/m2,22,control,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 0.86,fwd,kg/m2,12,thin,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 0.56,fwd,kg/m2,22,thin,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 0.95,fwd,kg/m2,0,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,wet burn,NA
@@ -23,8 +23,8 @@ value,variable,units,years_post,treatment,study,forest_type,region,burn_season,t
 0.62,fwd,kg/m2,1,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,dry burn,NA
 0.48,fwd,kg/m2,12,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,dry burn,NA
 0.42,fwd,kg/m2,22,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,dry burn,NA
-0.86,cwd,kg/m2,12,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-0.43,cwd,kg/m2,22,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
+0.86,cwd,kg/m2,12,control,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
+0.43,cwd,kg/m2,22,control,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 1.43,cwd,kg/m2,12,thin,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 0.52,cwd,kg/m2,22,thin,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 1.32,cwd,kg/m2,0,thinburn,hood,ponderosa,interior_pnw,spring,commercial,NA,NA
@@ -35,8 +35,8 @@ value,variable,units,years_post,treatment,study,forest_type,region,burn_season,t
 0.11,cwd,kg/m2,1,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
 0.50,cwd,kg/m2,12,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
 0.47,cwd,kg/m2,22,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
-1.49,cwd,kg/m2,12,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-1.47,cwd,kg/m2,22,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
+1.49,cwd,kg/m2,12,control,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
+1.47,cwd,kg/m2,22,control,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 1.09,cwd,kg/m2,12,thin,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 1.63,cwd,kg/m2,22,thin,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 0.41,cwd,kg/m2,0,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,wet burn,NA
@@ -47,8 +47,8 @@ value,variable,units,years_post,treatment,study,forest_type,region,burn_season,t
 0.13,cwd,kg/m2,1,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,dry burn,NA
 1.13,cwd,kg/m2,12,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,dry burn,NA
 0.77,cwd,kg/m2,22,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,dry burn,NA
-4.17,litterduff,kg/m2,12,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-2.08,litterduff,kg/m2,22,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
+4.17,litterduff,kg/m2,12,control,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
+2.08,litterduff,kg/m2,22,control,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 2.46,litterduff,kg/m2,12,thin,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 1.57,litterduff,kg/m2,22,thin,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 2.26,litterduff,kg/m2,0,thinburn,hood,ponderosa,interior_pnw,spring,commercial,NA,NA
@@ -59,8 +59,8 @@ value,variable,units,years_post,treatment,study,forest_type,region,burn_season,t
 0.93,litterduff,kg/m2,1,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
 1.39,litterduff,kg/m2,12,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
 1.21,litterduff,kg/m2,22,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
-3.39,litterduff,kg/m2,12,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-1.97,litterduff,kg/m2,22,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
+3.39,litterduff,kg/m2,12,control,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
+1.97,litterduff,kg/m2,22,control,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 2.90,litterduff,kg/m2,12,thin,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 2.07,litterduff,kg/m2,22,thin,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 2.77,litterduff,kg/m2,0,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,wet burn,NA
@@ -71,9 +71,9 @@ value,variable,units,years_post,treatment,study,forest_type,region,burn_season,t
 2.20,litterduff,kg/m2,1,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,dry burn,NA
 1.61,litterduff,kg/m2,12,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,dry burn,NA
 1.39,litterduff,kg/m2,22,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,dry burn,NA
-348,density,trees/ha,1,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-358,density,trees/ha,12,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-304,density,trees/ha,22,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
+348,density,trees/ha,1,control,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
+358,density,trees/ha,12,control,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
+304,density,trees/ha,22,control,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 177,density,trees/ha,1,thin,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 186,density,trees/ha,12,thin,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 189,density,trees/ha,22,thin,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
@@ -83,9 +83,9 @@ value,variable,units,years_post,treatment,study,forest_type,region,burn_season,t
 202,density,trees/ha,1,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
 213,density,trees/ha,12,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
 202,density,trees/ha,22,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
-325,density,trees/ha,1,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-306,density,trees/ha,12,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-275,density,trees/ha,22,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
+325,density,trees/ha,1,control,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
+306,density,trees/ha,12,control,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
+275,density,trees/ha,22,control,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 140,density,trees/ha,1,thin,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 133,density,trees/ha,12,thin,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 140,density,trees/ha,22,thin,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
@@ -95,9 +95,9 @@ value,variable,units,years_post,treatment,study,forest_type,region,burn_season,t
 148,density,trees/ha,1,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,dry burn,NA
 131,density,trees/ha,12,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,dry burn,NA
 133,density,trees/ha,22,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,dry burn,NA
-23.7,basal_area,m2/ha,1,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-30.0,basal_area,m2/ha,12,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-29.0,basal_area,m2/ha,22,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
+23.7,basal_area,m2/ha,1,control,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
+30.0,basal_area,m2/ha,12,control,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
+29.0,basal_area,m2/ha,22,control,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 12.9,basal_area,m2/ha,1,thin,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 17.4,basal_area,m2/ha,12,thin,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 21.0,basal_area,m2/ha,22,thin,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
@@ -107,9 +107,9 @@ value,variable,units,years_post,treatment,study,forest_type,region,burn_season,t
 14.4,basal_area,m2/ha,1,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
 18.9,basal_area,m2/ha,12,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
 21.7,basal_area,m2/ha,22,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
-25.5,basal_area,m2/ha,1,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-28.3,basal_area,m2/ha,12,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-29.2,basal_area,m2/ha,22,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
+25.5,basal_area,m2/ha,1,control,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
+28.3,basal_area,m2/ha,12,control,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
+29.2,basal_area,m2/ha,22,control,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 11.9,basal_area,m2/ha,1,thin,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 15.0,basal_area,m2/ha,12,thin,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 17.9,basal_area,m2/ha,22,thin,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
@@ -119,9 +119,9 @@ value,variable,units,years_post,treatment,study,forest_type,region,burn_season,t
 11.6,basal_area,m2/ha,1,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,dry burn,NA
 13.2,basal_area,m2/ha,12,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,dry burn,NA
 16.0,basal_area,m2/ha,22,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,dry burn,NA
-30.1,qmd,cm,1,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-33.1,qmd,cm,12,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-35.5,qmd,cm,22,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
+30.1,qmd,cm,1,control,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
+33.1,qmd,cm,12,control,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
+35.5,qmd,cm,22,control,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 31.2,qmd,cm,1,thin,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 35.4,qmd,cm,12,thin,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 38.6,qmd,cm,22,thin,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
@@ -131,9 +131,9 @@ value,variable,units,years_post,treatment,study,forest_type,region,burn_season,t
 30.4,qmd,cm,1,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
 34,qmd,cm,12,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
 37.6,qmd,cm,22,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
-32.3,qmd,cm,1,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-34.9,qmd,cm,12,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-36.6,qmd,cm,22,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
+32.3,qmd,cm,1,control,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
+34.9,qmd,cm,12,control,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
+36.6,qmd,cm,22,control,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 34.5,qmd,cm,1,thin,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 39.7,qmd,cm,12,thin,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 41.9,qmd,cm,22,thin,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
@@ -143,9 +143,9 @@ value,variable,units,years_post,treatment,study,forest_type,region,burn_season,t
 33.7,qmd,cm,1,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,dry burn,NA
 38.1,qmd,cm,12,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,dry burn,NA
 41,qmd,cm,22,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,dry burn,NA
-104,sapling_density,saps/ha,1,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-175,sapling_density,saps/ha,12,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-237,sapling_density,saps/ha,22,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
+104,sapling_density,saps/ha,1,control,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
+175,sapling_density,saps/ha,12,control,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
+237,sapling_density,saps/ha,22,control,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 59,sapling_density,saps/ha,1,thin,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 104,sapling_density,saps/ha,12,thin,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 175,sapling_density,saps/ha,22,thin,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
@@ -155,9 +155,9 @@ value,variable,units,years_post,treatment,study,forest_type,region,burn_season,t
 48,sapling_density,saps/ha,1,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
 23,sapling_density,saps/ha,12,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
 37,sapling_density,saps/ha,22,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
-383,sapling_density,saps/ha,1,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-462,sapling_density,saps/ha,12,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-614,sapling_density,saps/ha,22,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
+383,sapling_density,saps/ha,1,control,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
+462,sapling_density,saps/ha,12,control,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
+614,sapling_density,saps/ha,22,control,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 101,sapling_density,saps/ha,1,thin,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 693,sapling_density,saps/ha,12,thin,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 1526,sapling_density,saps/ha,22,thin,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
@@ -167,16 +167,16 @@ value,variable,units,years_post,treatment,study,forest_type,region,burn_season,t
 45,sapling_density,saps/ha,1,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,dry burn,NA
 124,sapling_density,saps/ha,12,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,dry burn,NA
 496,sapling_density,saps/ha,22,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,dry burn,NA
-135,seedling_density,seedlings/ha,12,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-275,seedling_density,seedlings/ha,22,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
+135,seedling_density,seedlings/ha,12,control,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
+275,seedling_density,seedlings/ha,22,control,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 17,seedling_density,seedlings/ha,12,thin,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 774,seedling_density,seedlings/ha,22,thin,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 11,seedling_density,seedlings/ha,12,thinburn,hood,ponderosa,interior_pnw,spring,commercial,NA,NA
 1603,seedling_density,seedlings/ha,22,thinburn,hood,ponderosa,interior_pnw,spring,commercial,NA,NA
 73,seedling_density,seedlings/ha,12,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
 1872,seedling_density,seedlings/ha,22,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
-865,seedling_density,seedlings/ha,12,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-4811,seedling_density,seedlings/ha,22,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
+865,seedling_density,seedlings/ha,12,control,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
+4811,seedling_density,seedlings/ha,22,control,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 2000,seedling_density,seedlings/ha,12,thin,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 3203,seedling_density,seedlings/ha,22,thin,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 622,seedling_density,seedlings/ha,12,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,wet burn,NA
@@ -187,48 +187,48 @@ value,variable,units,years_post,treatment,study,forest_type,region,burn_season,t
 85.1,torching_index,km/hour,22,thin,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 81.6,torching_index,km/hour,22,thinburn,hood,ponderosa,interior_pnw,spring,commercial,NA,NA
 97.4,torching_index,km/hour,22,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
-40.4,torching_index,km/hour,22,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-19.3,torching_index,km/hour,22,thin,hood,ponderosa,interior_pnw,NA,NA,NA,NA
+40.4,torching_index,km/hour,22,control,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
+19.3,torching_index,km/hour,22,thin,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 43.9,torching_index,km/hour,22,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,wet burn,NA
 47.4,torching_index,km/hour,22,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,dry burn,NA
 74.3,crowning_index,km/hour,22,control,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 93.9,crowning_index,km/hour,22,thin,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 90.6,crowning_index,km/hour,22,thinburn,hood,ponderosa,interior_pnw,spring,commercial,NA,NA
 91.4,crowning_index,km/hour,22,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
-58,crowning_index,km/hour,22,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-58.8,crowning_index,km/hour,22,thin,hood,ponderosa,interior_pnw,NA,NA,NA,NA
+58,crowning_index,km/hour,22,control,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
+58.8,crowning_index,km/hour,22,thin,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 91.4,crowning_index,km/hour,22,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,wet burn,NA
 93.9,crowning_index,km/hour,22,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,dry burn,NA
 0.68,canopy_fuel,kg/m2,22,control,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 0.49,canopy_fuel,kg/m2,22,thin,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 0.51,canopy_fuel,kg/m2,22,thinburn,hood,ponderosa,interior_pnw,spring,commercial,NA,NA
 0.47,canopy_fuel,kg/m2,22,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
-0.57,canopy_fuel,kg/m2,22,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-0.44,canopy_fuel,kg/m2,22,thin,hood,ponderosa,interior_pnw,NA,NA,NA,NA
+0.57,canopy_fuel,kg/m2,22,control,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
+0.44,canopy_fuel,kg/m2,22,thin,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 0.24,canopy_fuel,kg/m2,22,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,wet burn,NA
 0.25,canopy_fuel,kg/m2,22,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,dry burn,NA
 0.059,canopy_bulk_density,kg/m3,22,control,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 0.039,canopy_bulk_density,kg/m3,22,thin,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 0.041,canopy_bulk_density,kg/m3,22,thinburn,hood,ponderosa,interior_pnw,spring,commercial,NA,NA
 0.041,canopy_bulk_density,kg/m3,22,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
-0.019,canopy_bulk_density,kg/m3,22,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-0.025,canopy_bulk_density,kg/m3,22,thin,hood,ponderosa,interior_pnw,NA,NA,NA,NA
+0.019,canopy_bulk_density,kg/m3,22,control,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
+0.025,canopy_bulk_density,kg/m3,22,thin,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 0.011,canopy_bulk_density,kg/m3,22,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,wet burn,NA
 0.011,canopy_bulk_density,kg/m3,22,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,dry burn,NA
 3.55,canopy_base_height,meters,22,control,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 3.16,canopy_base_height,meters,22,thin,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 3.16,canopy_base_height,meters,22,thinburn,hood,ponderosa,interior_pnw,spring,commercial,NA,NA
 4.08,canopy_base_height,meters,22,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
-1.05,canopy_base_height,meters,22,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-0.79,canopy_base_height,meters,22,thin,hood,ponderosa,interior_pnw,NA,NA,NA,NA
+1.05,canopy_base_height,meters,22,control,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
+0.79,canopy_base_height,meters,22,thin,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 1.71,canopy_base_height,meters,22,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,wet burn,NA
 1.84,canopy_base_height,meters,22,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,dry burn,NA
 23.51,stand_height,meters,22,control,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 23.25,stand_height,meters,22,thin,hood,ponderosa,interior_pnw,NA,commercial,NA,NA
 22.99,stand_height,meters,22,thinburn,hood,ponderosa,interior_pnw,spring,commercial,NA,NA
 23.77,stand_height,meters,22,thinburn,hood,ponderosa,interior_pnw,fall,commercial,NA,NA
-24.03,stand_height,meters,22,control,hood,ponderosa,interior_pnw,NA,NA,NA,NA
-22.47,stand_height,meters,22,thin,hood,ponderosa,interior_pnw,NA,NA,NA,NA
+24.03,stand_height,meters,22,control,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
+22.47,stand_height,meters,22,thin,hood,ponderosa,interior_pnw,NA,shelterwood,NA,NA
 22.73,stand_height,meters,22,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,wet burn,NA
 21.95,stand_height,meters,22,thinburn,hood,ponderosa,interior_pnw,spring,shelterwood,dry burn,NA
 23.9,all_woody,Mg/ha,0,control,morici,ponderosa,interior_pnw,NA,NA,NA,NA
@@ -304,27 +304,27 @@ value,variable,units,years_post,treatment,study,forest_type,region,burn_season,t
 0.12,one_hour,Mg/ha,6,thin,morici,ponderosa,interior_pnw,NA,below,NA,NA
 0.06,one_hour,Mg/ha,17,thin,morici,ponderosa,interior_pnw,NA,below,NA,NA
 14.08,all_woody,Mg/ha,0,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
-7.4,all_woody,Mg/ha,1,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
-10.8,all_woody,Mg/ha,4,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
-10.62,cwd,Mg/ha,15,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
-4.47,cwd,Mg/ha,0,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
-8.65,cwd,Mg/ha,1,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
-5.85,cwd_rotten,Mg/ha,4,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
-0.66,cwd_rotten,Mg/ha,15,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
-3.16,cwd_rotten,Mg/ha,0,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
-4.59,cwd_sound,Mg/ha,1,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
+7.4,all_woody,Mg/ha,4,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
+10.8,all_woody,Mg/ha,15,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
+10.62,cwd,Mg/ha,0,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
+4.47,cwd,Mg/ha,4,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
+8.65,cwd,Mg/ha,15,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
+5.85,cwd_rotten,Mg/ha,0,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
+0.66,cwd_rotten,Mg/ha,4,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
+3.16,cwd_rotten,Mg/ha,15,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
+4.59,cwd_sound,Mg/ha,0,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
 3.82,cwd_sound,Mg/ha,4,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
 5.31,cwd_sound,Mg/ha,15,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
 3.58,fwd,Mg/ha,0,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
-2.92,fwd,Mg/ha,1,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
-2.15,fwd,Mg/ha,4,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
-2.45,hundred_hour,Mg/ha,15,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
-2.09,hundred_hour,Mg/ha,0,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
-1.55,hundred_hour,Mg/ha,1,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
-0.89,ten_hour,Mg/ha,4,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
-0.66,ten_hour,Mg/ha,15,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
-0.54,ten_hour,Mg/ha,0,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
-0.18,one_hour,Mg/ha,1,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
+2.92,fwd,Mg/ha,4,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
+2.15,fwd,Mg/ha,15,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
+2.45,hundred_hour,Mg/ha,0,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
+2.09,hundred_hour,Mg/ha,4,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
+1.55,hundred_hour,Mg/ha,15,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
+0.89,ten_hour,Mg/ha,0,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
+0.66,ten_hour,Mg/ha,4,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
+0.54,ten_hour,Mg/ha,15,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
+0.18,one_hour,Mg/ha,0,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
 0.12,one_hour,Mg/ha,4,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
 0.06,one_hour,Mg/ha,15,thinburn,morici,ponderosa,interior_pnw,fall,below,NA,NA
 15.5,basal_area,m2/ha,0,burn,morici,ponderosa,interior_pnw,fall,NA,NA,NA

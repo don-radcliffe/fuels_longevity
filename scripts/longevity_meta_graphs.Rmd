@@ -12,11 +12,86 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r read data, load packages, message = FALSE}
 require(here)
 require(dplyr)
+require(tidyr)
 require(ggplot2)
 
 import_dir_ma <- here::here('data')
 export_dir_ma <- here::here('plots')
 
 raw <- read.csv(file.path(import_dir_ma, 'web_plot_digitizer_data.csv'))
-head(raw)
+factored <- raw %>%
+  filter(treatment != 'wildfire_low') %>%
+  mutate(treatment = factor(treatment, 
+         levels = c('control', 'burn', 'thin', 'thinburn',
+                    'control+beetle', 'burn+beetle', 'thin+beetle', 'thinburn+beetle',
+                    'undifferentiated')))
+```
+
+Some graphing standardization:
+```{r graphing code}
+## Theme for graphing.
+simpletheme <- theme(panel.grid.major = element_blank(), 
+                     panel.grid.minor = element_blank(),
+                     panel.background = element_blank()) +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  theme(axis.line = element_line(size = 0.2, color = 'black')) +
+  theme(legend.key=element_blank(), legend.background=element_blank())
+
+treatment_colors <- c('control' = 'deepskyblue1',
+                      'burn' = 'red3', 
+                      'thin' = 'gold2',
+                      'thinburn' = 'purple3',
+                      'control+beetle' = 'gray70',
+                      'burn+beetle' = 'gray55',
+                      'thin+beetle' = 'gray40',
+                      'thinburn+beetle' = 'gray25',
+                      'undifferentiated' = 'saddlebrown')
+
+## Graphing function with all the repetitive components.
+gg_fun <- function(table, variable) {
+  yvar = enquo(variable)
+  ggplot(table, aes(x = years_post, y = !!yvar)) +
+    geom_jitter(aes(color = treatment), size = 3.5, alpha = 0.5) +
+    scale_color_manual(values = treatment_colors) +
+    coord_cartesian(xlim = c(-0.5, 23)) +
+    expand_limits(y = 0) +
+    xlab('Years after treatment') +
+    simpletheme
+}
+```
+
+We're going to take this variable by variable since there are different issues with lumping and units for each variable. 
+
+```{r fwd}
+fwd_table <- factored %>%
+  filter(variable == 'fwd' | variable == 'one_hour' | 
+         variable == 'ten_hour' | variable == 'hundred_hour') %>%
+  ## Unit conversion to Megagrams per hectare.
+  mutate(value = 
+           case_when(units == 'kg/m2' ~ 10 * value,
+                     units == 'Mg/ha' ~ 1 * value)) %>%
+  mutate(units = 'Mg/ha') %>%
+  pivot_wider(names_from = variable, values_from = value, 
+              id_cols = c(study, treatment, years_post, forest_type, region, 
+                          burn_season, thin_type, other)) %>%
+  mutate(fwd = case_when(is.na(fwd) ~ one_hour + ten_hour + hundred_hour,
+                         !is.na(fwd) ~ 1 * fwd))
+    
+gg_fwd <- gg_fun(table = fwd_table, variable = fwd) +
+  ggtitle('Fine Woody Debris') +
+  ylab('Fine woody debris (Megagrams per hectare)')
+gg_fwd
+```
+
+```{r cwd}
+cwd_table <- factored %>%
+  filter(variable == 'cwd' | variable == 'cwd_rotten' | variable == 'cwd_sound') 
+
+%>%
+  ## Units to Megagrams per hectare
+  mutate(value = case_when(
+    is.na(cwd) ~ cwd_rotten + cwd_sound,
+    !is.na(cwd) ~ cwd * 1)) %>%
+  mutate(units = 'Mg/ha')
+
 ```
