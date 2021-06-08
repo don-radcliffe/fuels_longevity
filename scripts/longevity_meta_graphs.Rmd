@@ -85,13 +85,71 @@ gg_fwd
 
 ```{r cwd}
 cwd_table <- factored %>%
-  filter(variable == 'cwd' | variable == 'cwd_rotten' | variable == 'cwd_sound') 
-
-%>%
+  filter(variable == 'cwd' | variable == 'cwd_rotten' | variable == 'cwd_sound') %>%
+  ## Unit conversion to Megagrams per hectare.
+  mutate(value = 
+           case_when(units == 'kg/m2' ~ 10 * value,
+                     units == 'Mg/ha' ~ 1 * value)) %>%
+  mutate(units = 'Mg/ha') %>%
+  pivot_wider(names_from = variable, values_from = value, 
+              id_cols = c(study, treatment, years_post, forest_type, region, 
+                          burn_season, thin_type, other)) %>%
   ## Units to Megagrams per hectare
   mutate(value = case_when(
     is.na(cwd) ~ cwd_rotten + cwd_sound,
-    !is.na(cwd) ~ cwd * 1)) %>%
-  mutate(units = 'Mg/ha')
+    !is.na(cwd) ~ cwd * 1))
 
+gg_cwd <- gg_fun(table = cwd_table, variable = cwd) +
+  ggtitle('Course Woody Debris') +
+  ylab('Course woody debris (Megagrams per hectare)')
+gg_cwd
+```
+
+```{r canopy bulk density}
+cbd_table <- factored %>%
+  filter(variable == 'canopy_bulk_density')
+
+gg_cbd <- gg_fun(table = cbd_table, variable = value) +
+  ggtitle('Canopy bulk density') +
+  ylab('Canopy bulk density (kg/m³)')
+```
+
+```{r canopy base height}
+cbh_table <- factored %>%
+  filter(variable == 'canopy_base_height')
+
+gg_cbh <- gg_fun(table = cbh_table, variable = value) +
+  ggtitle('Canopy base height') +
+  ylab('Canopy base height (meters)')
+gg_cbh
+```
+
+```{r basal area}
+ba_table <- factored %>%
+  filter(variable == 'basal_area')
+
+gg_ba <- gg_fun(table = ba_table, variable = value) +
+  ggtitle('Basal area') + 
+  ylab('Basal area (m²/ha)')
+gg_ba
+```
+
+```{r density}
+den_table <- factored %>%
+  filter(variable == 'density') 
+
+gg_den <- gg_fun(table = den_table, variable = value) +
+  ggtitle('Density') +
+  ylab('Density (trees per hectare)')
+gg_den
+```
+
+```{r qmd}
+qmd_table <- factored %>%
+  filter(variable == 'qmd')
+
+gg_qmd <- gg_fun(table = qmd_table, variable = value) +
+  ggtitle('Quadratic mean diameter') +
+  ylab('Quadratic mean diameter (cm)')
+gg_qmd
 ```
