@@ -67,7 +67,7 @@ treatment_type_colors <- c('commercial thin' = 'blue1',
 
 Below I graph basal area against time since treatment, as a visual example of our Colville study so we can talk about where we could fill in the study design.  We've got 79 plots here that meet our criteria of being a thin+burn treatment in a dry forest, and what's not included here that can be included in the Colville study is at least 50 'control' plots: those pretreatment plots from the East Wedge and Walker projects that don't overlap with any treatments recorded in the FACTS database. 
 
-I received plot-level-summarized data from Jason Clark, so unfortunately I can't be 100% sure that I processed my data in the same way. The Colville tree graphs are for trees greater than five inches. 
+I received plot-level-summarized data from Jason Clark, so unfortunately I can't be 100% sure that I processed my data in the exact same way. The Colville tree graphs are for trees greater than five inches. 
 
 The first graph below gives the best idea of the timespread, the second graph below is faceted by project area and gives a better idea of spatial clustering. Note that the colors denote which type of thinning 'treatment' and don't include the word burn, because all were burned. 
 
@@ -111,7 +111,7 @@ Just in looking at the temporal spread, I see option 1 as most likely to improve
 
 We could also add a few more long term plots (option 2), but we would only be able to pull from project areas already represented, especially Eagle Rock.  We've sampled from all the feasible project areas in the west Colville. Here's the map if you need a memory jog:
 
-```{r air-quality, echo=FALSE, out.width = '90%'}
+```{r colville, echo=FALSE, out.width = '90%'}
 knitr::include_graphics(here("data/colville/project_areas_map.jpg"), error = FALSE)
 ```
 
@@ -144,6 +144,14 @@ Brian also mentioned that you may be open to funding some RA money for me, and I
 # Metaanlysis
 
 For this section I want to present some of the alternative possibilities for graphing the meta-analysis data in the fuels longevity report, and then discuss what conclusions we can talk about from the results.  I'll use basal area as the example again because its probably the metric with the tightest relationship to the other metrics.  Note that I haven't formatted my own datasets into this table yet, so these graphs aren't totally complete, but that will be the next step. 
+
+First, here's a quick map of studies we're pulling data from.  I'm not sure it's best to make a map to go in the report, because many of these studies don't have exact locations, but I'm open to either way. 
+
+```{r meta-analysis map, echo=FALSE, out.width = '90%'}
+knitr::include_graphics(here("data/meta_map.jpg"), error = FALSE)
+```
+
+Formatting code:
 
 ```{r read and format metaanlysis data, message = FALSE}
 raw_ma <- read.csv(file.path(import_dir_ma, 'web_plot_digitizer_data.csv'))
@@ -290,14 +298,16 @@ gg_nc <- ba_ns %>%
 gg_nc
 ```
 
+
 ## Discussion points with Derek
 
-How strongly do we want to try and draw conclusions from these types of graphs?  Obviously I'll couch any language I use, because these studies all have nuanced variation in treatment implementation, study design, ecological context, etc., that we can't really capture here.   
+Q1: How strongly do we want to try and draw conclusions from these types of graphs?  Obviously I'll couch any language I use, because these studies all have nuanced variation in treatment implementation, study design, ecological context, etc., that we can't really capture here.     
 
-How in-depth do we present each Washington dataset, or do we just include it in the meta-analysis graph?  The latter may be the better option from the standpoint of trying to publish the data later. 
+Q2: How in-depth do we present each Washington dataset, or do we just include it in the meta-analysis graph?  The latter may be the better option from the standpoint of trying to publish the data later.   
 
+Q3: Can we send the study list to a couple people to see if it's missing anything?  
 
-Here's the proposed outline of the report:  
+Here's the proposed outline of the report.  I propose to have a rough draft to you by Sunday night of this week, so you can look at it on Monday June 21st ahead of our meeting on Tuesday.  It may be very rough in spots, but that way you can get a good sense of where I'm taking it before I polish it up too much.    
 
 1) Introduction
     * Big picture issues with lack of knowledge on fuels treatment longevity.
