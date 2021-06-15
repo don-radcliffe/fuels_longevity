@@ -1,5 +1,5 @@
 ---
-title: "derek_questions_June_15"
+title: "derek_questions_june_15"
 author: "Don Radcliffe"
 date: "6/14/2021"
 output: html_document
@@ -9,22 +9,57 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+```{r load packages, message = FALSE, include = FALSE}
+require(here)
+require(dplyr)
+require(tidyr)
+require(ggplot2)
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
-
-```{r cars}
-summary(cars)
+import_dir_cnf <- here::here('data', 'colville')
+import_dir_ma <- here::here('data')
 ```
 
-## Including Plots
+## Colville
+```{r read and format colville data, message = FALSE}
+## Colville Data
+raw_cnf_trees <- read.csv(file.path(import_dir_cnf, 'trees_tidy.csv'))
+cnf_plot_info <- read.csv(file.path(import_dir_cnf, 'plot_info.csv'))
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
+cnf_trees <- raw_cnf_trees %>%
+  full_join(cnf_plot_info, by = c('plot')) %>%
+  ## Filter dead tree data out of my portion, not sure if Clark & Loehman included it.
+  filter(status != 'dead')
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+## Metaanlysis
+```{r read and format metaanlysis data, message = FALSE}
+raw_ma <- read.csv(file.path(import_dir_ma, 'web_plot_digitizer_data.csv'))
+factored_ma <- raw_ma %>%
+  filter(treatment != 'wildfire_low') %>%
+  mutate(treatment = factor(treatment, 
+         levels = c('control', 'burn', 'thin', 'thinburn',
+                    'control+beetle', 'burn+beetle', 'thin+beetle', 'thinburn+beetle',
+                    'undifferentiated')))
+```
+
+Some graphing standardization:
+```{r graphing code}
+## Theme for graphing.
+simpletheme <- theme(panel.grid.major = element_blank(), 
+                     panel.grid.minor = element_blank(),
+                     panel.background = element_blank()) +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  theme(axis.line = element_line(size = 0.2, color = 'black')) +
+  theme(legend.key=element_blank(), legend.background=element_blank())
+
+treatment_colors <- c('control' = 'deepskyblue1',
+                      'burn' = 'red3', 
+                      'thin' = 'gold2',
+                      'thinburn' = 'purple3',
+                      'control+beetle' = 'gray70',
+                      'burn+beetle' = 'gray55',
+                      'thin+beetle' = 'gray40',
+                      'thinburn+beetle' = 'gray25',
+                      'undifferentiated' = 'saddlebrown')
+```
+
