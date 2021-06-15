@@ -15,6 +15,7 @@ knitr::opts_chunk$set(echo = TRUE)
 require(here)
 require(dplyr)
 require(tidyr)
+require(stringr)
 require(ggplot2)
 
 import_dir_cnf <- here::here('data', 'colville')
@@ -30,7 +31,17 @@ cnf_plot_info <- read.csv(file.path(import_dir_cnf, 'plot_info.csv'))
 cnf_trees <- raw_cnf_trees %>%
   full_join(cnf_plot_info, by = c('plot')) %>%
   ## Filter dead tree data out of my portion, not sure if Clark & Loehman included it.
-  filter(status != 'dead')
+  filter(status != 'dead') %>%
+  ## Not all commercial thin labelled the same way,
+  ## and changing 'shelterwood establishment cut' to 'shelterwood' so it's less clunky in the legend.
+  mutate(treatment_type = str_replace_all(treatment_type, c(
+    'commercial thin' = 'commercial',
+    'commercial' = 'commercial thin',
+    'shelterwood establishment cut' = 'shelterwood'))) %>%
+  ## Factor in a logical order.
+  mutate(treatment_type = factor(treatment_type, levels = c(
+    'commercial thin', 'shelterwood', 'clearcut' 
+  )))
 ```
 
 Some graphing standardization:
@@ -41,19 +52,12 @@ simpletheme <- theme(panel.grid.major = element_blank(),
                      panel.background = element_blank()) +
   theme(plot.title = element_text(hjust = 0.5)) +
   theme(axis.line = element_line(size = 0.2, color = 'black')) +
-  theme(legend.key=element_blank(), legend.background=element_blank()) +
-  xlab('years since burning') +
-  ylab('basal area (m²/ha)')
+  theme(legend.key=element_blank(), legend.background=element_blank(), legend.title = element_blank()) +
+  theme(legend.position = 'bottom')
 
-treatment_colors <- c('control' = 'deepskyblue1',
-                      'burn' = 'red3', 
-                      'thin' = 'gold2',
-                      'thinburn' = 'purple3',
-                      'control+beetle' = 'gray70',
-                      'burn+beetle' = 'gray55',
-                      'thin+beetle' = 'gray40',
-                      'thinburn+beetle' = 'gray25',
-                      'undifferentiated' = 'saddlebrown')
+treatment_type_colors <- c('commercial thin' = 'blue1',
+                           'shelterwood' = 'green1',
+                           'clearcut' = 'gray50')
 ```
 
 ##Graphs
@@ -62,15 +66,56 @@ Below I graph basal area against time since treatment, as a visual example of ou
 
 I received plot-level-summarized data from Jason Clark, so unfortunately I can't be 100% sure that I processed my data in the same way. The Colville tree graphs are for trees greater than five inches. 
 
-```{r graph basal area, height = 4, width = 8}
+The first graph below gives the best idea of the timespread, the second graph below is faceted by project area and gives a better idea of spatial clustering. Note that the colors denote which type of thinning 'treatment' and don't include the word burn, because all were burned. 
+
+```{r graph basal area colville, height = 8, width = 10}
 ba_all <- cnf_trees %>%
-  ggplot(aes(x = years_post, y = basal_area, color = lead)) +
-    geom_point(size = 3, alpha = 0.6) +
-    ggtitle('Colville chronosquence')
+  ggplot(aes(x = years_post, y = basal_area, color = treatment_type)) +
+    geom_point(size = 3, alpha = 0.5) +
+    ggtitle('Colville chronosquence basal area example') +
+    xlab('years since burn') +
+    ylab('basal area (m²/ha)') +
+    scale_color_manual(values = treatment_type_colors) +
+    simpletheme
 ba_all
 ```
 
+```{r graph basal area colville facted, height = 8, width = 10}
+ba_facet <- cnf_trees %>%
+  ggplot(aes(x = years_post, y = basal_area, color = treatment_type)) +
+    geom_point(size = 3, alpha = 0.4) +
+    facet_wrap(vars(project)) +
+    ggtitle('Colville chronosquence basal area example') +
+    xlab('years since burn') +
+    ylab('basal area (m²/ha)') +
+    scale_color_manual(values = treatment_type_colors) +
+    simpletheme
+ba_facet
+```
+
+##Thoughts on Colville data needs. 
+
+I see four possible strategies for improving the publishability of the data with more field plots:
+
+1) Sample more plots in the short term (0-5 year) interval.
+2) Sample more plots in the long term 15+ year interval. 
+3) Get better representation of project areas.
+4) Get plots from a different treatment category, like thinning only. 
+
+Just in looking at the temporal spread, I see option 1 as most likely to improve the study, easiest to sell to funders, and as most achievable.  Without a decent sample size in the short term, we don't have much to compare all those mid-term plots to (although, there will be many 'control' plots).  Since most knowledge about fuels treatment is based on short term sampling, it would be valuable to have some 'anchor points' there. From a logistics standpoint too, it'd be pretty easy to ask Eric, James, and Jason where the treatments are happening, and I know they are happening both from seeing it and from the FACTS database. This would also have the advantage of adding more project areas (option 3).
+
+We could also add a few more long term plots (option 2), but we would only be able to pull from project areas already represented, especially Eagle Rock.
+
+For getting better representation of project areas, there would be two ways to go: adding shorter term data, or going to a different district or ownership.  Getting   A quick check of the FACTs database showed me that there aren't *that* many thin+burn projects on other districts, but there are a few from the Three Rivers Ranger District, which we could look a little deeper into.  It's also worth considering the adjacent Sherman Creek Wildlife Area, which has done a lot of treatment and isn't in the FACTS database. 
+
+I wanted to put other treatments out there as an idea, but I think it's probably best to intensify the sample of one treatment type so we can maximize the value for testing the effect of time.  I think the forest is too variable and the chronosequence design too weak for us to be able to afford splitting treatments.  
+
+#Proposal
+
+I can easily see the value of an additional 15-20 short term plots and up to 5 additional long term plots, and propose that as a plan. 
+
 #Metaanlysis
+
 ```{r read and format metaanlysis data, message = FALSE}
 raw_ma <- read.csv(file.path(import_dir_ma, 'web_plot_digitizer_data.csv'))
 factored_ma <- raw_ma %>%
