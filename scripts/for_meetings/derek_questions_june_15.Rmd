@@ -2,10 +2,12 @@
 title: "derek_questions_june_15"
 author: "Don Radcliffe"
 date: "6/14/2021"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
-This markdown script is designed to facilitate our meeting on Tuesday, June 15th, by providing an easy place to share questions and data in the same space.  The first section takes a look at the Colville dataset with an eye towards the funding questions you may have, and the second section offers alternate presentations of the meta-analysis data for the report. 
+This markdown script is intended to facilitate our meeting on Tuesday, June 15th, by providing an easy place to share questions and data in the same space.  The first section takes a look at the Colville dataset with an eye towards the funding questions you may have, and the second section offers alternate presentations of the meta-analysis data for the report. 
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -16,13 +18,14 @@ require(here)
 require(dplyr)
 require(tidyr)
 require(stringr)
+require(knitr)
 require(ggplot2)
 
 import_dir_cnf <- here::here('data', 'colville')
 import_dir_ma <- here::here('data')
 ```
 
-#Colville
+# Colville
 ```{r read and format colville data, message = FALSE}
 ## Colville Data
 raw_cnf_trees <- read.csv(file.path(import_dir_cnf, 'trees_tidy.csv'))
@@ -45,7 +48,7 @@ cnf_trees <- raw_cnf_trees %>%
 ```
 
 Some graphing standardization:
-```{r graphing code}
+```{r graphing code colville}
 ## Theme for graphing.
 simpletheme <- theme(panel.grid.major = element_blank(), 
                      panel.grid.minor = element_blank(),
@@ -60,7 +63,7 @@ treatment_type_colors <- c('commercial thin' = 'blue1',
                            'clearcut' = 'gray50')
 ```
 
-##Graphs
+## Graphs
 
 Below I graph basal area against time since treatment, as a visual example of our Colville study so we can talk about where we could fill in the study design.  We've got 79 plots here that meet our criteria of being a thin+burn treatment in a dry forest, and what's not included here that can be included in the Colville study is at least 50 'control' plots: those pretreatment plots from the East Wedge and Walker projects that don't overlap with any treatments recorded in the FACTS database. 
 
@@ -93,28 +96,52 @@ ba_facet <- cnf_trees %>%
 ba_facet
 ```
 
-##Thoughts on Colville data needs. 
+## Thoughts on Colville data needs. 
 
-I see four possible strategies for improving the publishability of the data with more field plots:
+There looks to be a pretty weak relationship of basal area with time, which matches my expectations after fieldwork.  I'd expect many fuels metrics to be even more variable if anything.  For the manuscript we'll probably need to bring in a site productivity index and thinning intensity estimate to help us sort things out.  It would be pretty interesting for the longevity question if we found that productivity explained more variance than time.  
+
+For publication purposes, I think we should aim fairly low with the chronosequence design unless we have a ton of plots and stands.  With some extra funding for a couple weeks field work, I see four possible strategies for improving the publishability of the data with more field plots:
 
 1) Sample more plots in the short term (0-5 year) interval.
-2) Sample more plots in the long term 15+ year interval. 
+2) Sample more plots in the long term (15+ year) interval. 
 3) Get better representation of project areas.
 4) Get plots from a different treatment category, like thinning only. 
 
-Just in looking at the temporal spread, I see option 1 as most likely to improve the study, easiest to sell to funders, and as most achievable.  Without a decent sample size in the short term, we don't have much to compare all those mid-term plots to (although, there will be many 'control' plots).  Since most knowledge about fuels treatment is based on short term sampling, it would be valuable to have some 'anchor points' there. From a logistics standpoint too, it'd be pretty easy to ask Eric, James, and Jason where the treatments are happening, and I know they are happening both from seeing it and from the FACTS database. This would also have the advantage of adding more project areas (option 3).
+Just in looking at the temporal spread, I see option 1 as most likely to improve the study, easiest to sell to funders, and as most achievable.  Without a decent sample size in the short term, we don't have much to compare all those mid-term plots to (although, there will be many 'control' plots which will help our case).  Since most knowledge about fuels treatment is based on short term sampling, it would be valuable to have some 'anchor points' there. From a logistics standpoint, it'd be pretty easy to ask Eric, James, and Jason where the recent treatments are happening, and I know they are happening both from seeing it and from the FACTS database. This would also have the advantage of adding more project areas (option 3).  There seems to be a greater prevalence of jackpot burning (as opposed to broadcast) in more recent projects, but some of the Clark/Loemann plots and a few of mine had jackpot burning, so we already have that as part of the study.  
 
-We could also add a few more long term plots (option 2), but we would only be able to pull from project areas already represented, especially Eagle Rock.
+We could also add a few more long term plots (option 2), but we would only be able to pull from project areas already represented, especially Eagle Rock.  We've sampled from all the feasible project areas in the west Colville. Here's the map if you need a memory jog:
 
-For getting better representation of project areas, there would be two ways to go: adding shorter term data, or going to a different district or ownership.  Getting   A quick check of the FACTs database showed me that there aren't *that* many thin+burn projects on other districts, but there are a few from the Three Rivers Ranger District, which we could look a little deeper into.  It's also worth considering the adjacent Sherman Creek Wildlife Area, which has done a lot of treatment and isn't in the FACTS database. 
+```{r air-quality, echo=FALSE, out.width = '90%'}
+knitr::include_graphics(here("data/colville/project_areas_map.jpg"), error = FALSE)
+```
 
-I wanted to put other treatments out there as an idea, but I think it's probably best to intensify the sample of one treatment type so we can maximize the value for testing the effect of time.  I think the forest is too variable and the chronosequence design too weak for us to be able to afford splitting treatments.  
+For getting better representation of project areas, there would be two ways to go: adding shorter term data, or going to a different district or ownership. A quick check of the FACTs database showed relatively few thin+burn projects on other districts, but there are some on the Three Rivers Ranger District, which we could look deeper into.  It's also worth considering the adjacent Sherman Creek Wildlife Area, which has done a lot of treatment and isn't in the FACTS database. 
 
-#Proposal
+I wanted to put other treatments out there as an idea, but I think it's probably best to intensify the sample of one treatment type so we can maximize the value for testing the effect of time.  I think the forest is too variable and the chronosequence design too weak for us to afford splitting treatments.  
 
-I can easily see the value of an additional 15-20 short term plots and up to 5 additional long term plots, and propose that as a plan. 
+## Funding Proposal and Budget
 
-#Metaanlysis
+I can easily see the value of an additional 15-20 short term plots and a few additional long term plots, and propose that as a plan for the fuels survey. 
+
+For the bird survey, work would be roughly early May through Late June. Brian told me that DNR money would need to be spent by June 30, 2022, so the fuels work would run about the same timeline. 
+
+During that timeline in an ideal world, I'd have six crewmembers including me: four for bird work, and two for chronosequence. Based on the numbers that Brian gave me, it looks like four people total is more reasonable, but let me know if more seems feasible.  Below is a budget for four people for eight weeks, which is about as long as our part of the work could go.  It's actually a little high because I divided the monthly rate by four to get a weekly estimate.  We could also budget for seven weeks if it's too much.
+
+ - Field techs salary and benefits: 800/week * 4 techs = $3,200/week
+ - Food and lodging: 125/week * 4 techs                = $  600/week
+ - Ucars: 600/week * 2 cars                            = $1,200/week
+ 
+ - Total weekly:                                       = $5,000/week
+ 
+ - Gear: $2,000
+ 
+ - **Total for 8 weeks: $42,000**
+ 
+I'm proposing that we spend about 8 person weeks, or 2/8 full crew weeks, filling out the chronosequence work with mostly shorter term plots.  That should get us in the ballpark of 20 plots, depending on crew experience.  Likely, one team of two would do most of the chronosequence work, and I would spend most my time on the bird work since I'm designing the biodiversity/fuels treatment synergy/tradeoff study and including it in my dissertation. 
+
+Brian also mentioned that you may be open to funding some RA money for me, and I appreciate you bringing this up as an option.  So you know where I'm at: this would be very helpful for the summer term of 2022 and 2023 if possible in the future; I know the money in question right now is only up to the end of the next fiscal year so it doesn't apply to those terms.  Not having to do fieldwork in the summer would go a long way towards freeing up time to work through the datasets we've compiled for the fuels longevity project, including the Colville chronosequence.  For the academic year quarters, I currently have fellowship funding for another couple of years and need to save some quarters to get teaching experience.  
+
+# Metaanlysis
 
 ```{r read and format metaanlysis data, message = FALSE}
 raw_ma <- read.csv(file.path(import_dir_ma, 'web_plot_digitizer_data.csv'))
@@ -127,7 +154,7 @@ factored_ma <- raw_ma %>%
 ```
 
 Graphing standardization:
-```{r graphing code}
+```{r graphing code metaanalysis}
 ## Theme for graphing.
 simpletheme <- theme(panel.grid.major = element_blank(), 
                      panel.grid.minor = element_blank(),
