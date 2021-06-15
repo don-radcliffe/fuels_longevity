@@ -1,0 +1,79 @@
+"plot","treatment_year","treatment_type","burn_year","burn_type","burn_month","project","years_post","lead","units","notes"
+"pt-b17-1",2005,"commercial thin",2008,"broadcast","october","berton",5,"clark","english",NA
+"pt-b17-2",2005,"commercial thin",2008,"broadcast","october","berton",5,"clark","english",NA
+"pt-b17-3",2005,"commercial thin",2008,"broadcast","october","berton",5,"clark","english",NA
+"pt-b19-2",2005,"commercial thin",2008,"broadcast","september","berton",5,"clark","english",NA
+"pt-b19-3",2005,"commercial thin",2008,"broadcast","september","berton",5,"clark","english",NA
+"pt-bc1-1",1992,"clearcut",1994,"broadcast","april","brown_camel",19,"clark","english",NA
+"pt-bc1-3",1992,"clearcut",1994,"broadcast","april","brown_camel",19,"clark","english",NA
+"pt-bc2-1",1992,"shelterwood establishment cut",1994,"underburn","april","brown_camel",19,"clark","english",NA
+"pt-bc2-2",1992,"shelterwood establishment cut",1994,"underburn","april","brown_camel",19,"clark","english",NA
+"pt-bc2-3",1992,"shelterwood establishment cut",1994,"underburn","april","brown_camel",19,"clark","english",NA
+"pt-bc5-3",1992,"clearcut",1994,"broadcast","april","brown_camel",19,"clark","english",NA
+"pt-er1-1",1998,"commercial thin",2001,"underburn","march","eagle_rock",12,"clark","english",NA
+"pt-er1-2",1998,"commercial thin",2001,"underburn","march","eagle_rock",12,"clark","english",NA
+"pt-er1-3",1998,"commercial thin",2001,"underburn","march","eagle_rock",12,"clark","english",NA
+"pt-er2-1",1997,"commercial thin",2004,"underburn","may","eagle_rock",9,"clark","english",NA
+"pt-er2-2",1997,"commercial thin",2004,"underburn","may","eagle_rock",9,"clark","english",NA
+"pt-er2-3",1997,"commercial thin",2004,"underburn","may","eagle_rock",9,"clark","english",NA
+"pt-er3-1",1996,"commercial thin",2004,"underburn","april","eagle_rock",9,"clark","english",NA
+"pt-er3-2",1996,"commercial thin",2004,"underburn","april","eagle_rock",9,"clark","english",NA
+"pt-er3-3",1996,"commercial thin",2004,"underburn","april","eagle_rock",9,"clark","english",NA
+"pt-ld23-1",2003,"clearcut",2006,"broadcast","october","lone_deer",7,"clark","english",NA
+"pt-ld23-2",2003,"clearcut",2006,"broadcast","october","lone_deer",7,"clark","english",NA
+"pt-ld23-3",2003,"clearcut",2006,"broadcast","october","lone_deer",7,"clark","english",NA
+"pt-ld48-1",2003,"commercial thin",2006,"underburn","may","lone_deer",7,"clark","english",NA
+"pt-ld48-2",2003,"commercial thin",2006,"underburn","may","lone_deer",7,"clark","english",NA
+"pt-ld48-3",2003,"commercial thin",2006,"underburn","may","lone_deer",7,"clark","english",NA
+"pt-s64-1",2006,"commercial thin",2008,"underburn with mastication and piling","may","scatter",5,"clark","english",NA
+"pt-s64-3",2006,"commercial thin",2008,"underburn with mastication and piling","may","scatter",5,"clark","english",NA
+"pt-s64-4",2006,"commercial thin",2008,"underburn with mastication and piling","may","scatter",5,"clark","english",NA
+"pt-ss12-3",2005,"clearcut",2005,"underburn","september","swan_song",8,"clark","english",NA
+"pt-ss8-1",2005,"clearcut",2010,"broadcast","may","swan_song",3,"clark","english",NA
+"pt-ss8-2",2005,"clearcut",2010,"broadcast","may","swan_song",3,"clark","english",NA
+"pt-t1-1",2010,"shelterwood",2013,"jackpot","may","trout",0,"clark","english",NA
+"pt-t1-3",2010,"shelterwood",2013,"jackpot","may","trout",0,"clark","english",NA
+"pt-t1-5",2010,"shelterwood",2013,"jackpot","may","trout",0,"clark","english",NA
+"bangs-north_05",2007,"commercial",2009,"jackpot",NA,"bangs",11,"tharpgeorge","english",NA
+"bangs-north_10",2007,"commercial",2009,"jackpot",NA,"bangs",11,"tharpgeorge","english",NA
+"bangs-north_12",2007,"commercial",2009,"jackpot",NA,"bangs",11,"tharpgeorge","english",NA
+"bangs-north_13",2007,"commercial",2008,"jackpot",NA,"bangs",12,"tharpgeorge","english",NA
+"bangs-north_23",2007,"commercial",2008,"jackpot",NA,"bangs",12,"tharpgeorge","english",NA
+"bangs-north_24",2008,"commercial",2008,"jackpot",NA,"bangs",12,"tharpgeorge","english",NA
+"bangs-north_26",2008,"commercial",2009,"jackpot",NA,"bangs",11,"tharpgeorge","english",NA
+"bangs-north_27",2007,"commercial",2009,"jackpot",NA,"bangs",11,"tharpgeorge","english",NA
+"bangs-north_28",2007,"commercial",2009,"jackpot",NA,"bangs",11,"tharpgeorge","english",NA
+"bangs-south_03",2007,"commercial",2010,"jackpot",NA,"bangs",10,"tharpgeorge","english",NA
+"deadman_14",2010,"commercial",2012,"jackpot",NA,"deadman",8,"tharpgeorge","english",NA
+"deadman_15",2010,"commercial",2012,"jackpot",NA,"deadman",8,"tharpgeorge","english",NA
+"deadman_20",2010,"commercial",2012,"jackpot",NA,"deadman",8,"tharpgeorge","english",NA
+"deadman_29",2010,"commercial",2012,"jackpot",NA,"deadman",8,"tharpgeorge","english",NA
+"deadman_30",2010,"commercial",2012,"jackpot",NA,"deadman",8,"tharpgeorge","english",NA
+"deadman_31",2010,"commercial",2012,"jackpot",NA,"deadman",8,"tharpgeorge","english",NA
+"deadman_32",2010,"commercial",2012,"jackpot",NA,"deadman",8,"tharpgeorge","english",NA
+"eagle-rock_33",1997,"commercial",2001,"broadcast",NA,"eagle_rock",19,"radcliffe","metric",NA
+"eagle-rock_34",1997,"commercial",2001,"broadcast",NA,"eagle_rock",19,"radcliffe","metric",NA
+"eagle-rock_35",1997,"commercial",2001,"broadcast",NA,"eagle_rock",19,"radcliffe","metric",NA
+"eagle-rock_36",1997,"commercial",2001,"broadcast",NA,"eagle_rock",19,"radcliffe","metric",NA
+"eagle-rock_37",1998,"commercial",2001,"broadcast",NA,"eagle_rock",19,"radcliffe","metric",NA
+"eagle-rock_38",1998,"commercial",2001,"broadcast",NA,"eagle_rock",19,"radcliffe","metric",NA
+"eagle-rock_39",1996,"commercial",2001,"broadcast",NA,"eagle_rock",19,"radcliffe","metric",NA
+"eagle-rock_40",1997,"commercial",2004,"broadcast",NA,"eagle_rock",16,"radcliffe","metric",NA
+"eagle-rock_41",1997,"commercial",2004,"broadcast",NA,"eagle_rock",16,"radcliffe","metric",NA
+"herron_55",2009,"commercial",2013,"underburn",NA,"herron",7,"radcliffe","metric",NA
+"herron_56",2009,"commercial",2013,"underburn",NA,"herron",7,"radcliffe","metric",NA
+"herron_57",2009,"commercial",2013,"underburn",NA,"herron",7,"radcliffe","metric",NA
+"lone-deer_51",2003,"commercial",2005,"underburn",NA,"lone_deer",15,"tharpgeorge","english",NA
+"lone-deer_52",2003,"commercial",2005,"underburn",NA,"lone_deer",15,"tharpgeorge","english",NA
+"lone-deer_53",2003,"commercial",2005,"underburn",NA,"lone_deer",15,"tharpgeorge","english",NA
+"lone-deer_54",2003,"commercial",2006,"underburn",NA,"lone_deer",14,"tharpgeorge","english",NA
+"lone-deer_80",2003,"commercial",2006,"underburn",NA,"lone_deer",14,"tharpgeorge","english",NA
+"orient_58",2006,"commercial",2008,"jackpot",NA,"orient",12,"radcliffe","metric",NA
+"orient_59",2006,"commercial",2008,"jackpot",NA,"orient",12,"tharpgeorge","english",NA
+"orient_60",2006,"commercial",2008,"jackpot",NA,"orient",12,"tharpgeorge","english",NA
+"orient_61",2006,"commercial",2008,"jackpot",NA,"orient",12,"tharpgeorge","english",NA
+"orient_63",2006,"commercial",2008,"jackpot",NA,"orient",12,"tharpgeorge","english",NA
+"orient_65",2006,"commercial",2008,"jackpot",NA,"orient",12,"tharpgeorge","english",NA
+"orient_67",2006,"commercial",2008,"jackpot",NA,"orient",12,"tharpgeorge","english",NA
+"orient_68",2006,"commercial",2008,"jackpot",NA,"orient",12,"tharpgeorge","english",NA
+"scatter_46",2006,"commercial",2009,"jackpot",NA,"scatter",11,"radcliffe","metric",NA
