@@ -128,14 +128,14 @@ For the bird survey, work would be roughly early May through Late June. Brian to
 During that timeline in an ideal world, I'd have six crewmembers including me: four for bird work, and two for chronosequence. Based on the numbers that Brian gave me, it looks like four people total is more reasonable, but let me know if more seems feasible.  Below is a budget for four people for eight weeks, which is about as long as our part of the work could go.  It's actually a little high because I divided the monthly rate by four to get a weekly estimate.  We could also budget for seven weeks if it's too much.
 
  - Field techs salary and benefits: 800/week * 4 techs = $3,200/week
- - Food and lodging: 125/week * 4 techs                = $  600/week
+ - Food and lodging: 125/week * 4 techs                = $  500/week
  - Ucars: 600/week * 2 cars                            = $1,200/week
  
- - Total weekly:                                       = $5,000/week
+ - Total weekly:                                       = $4,900/week
  
  - Gear: $2,000
  
- - **Total for 8 weeks: $42,000**
+ - **Total for 8 weeks: $41,200**
  
 I'm proposing that we spend about 8 person weeks, or 2/8 full crew weeks, filling out the chronosequence work with mostly shorter term plots.  That should get us in the ballpark of 20 plots, depending on crew experience.  Likely, one team of two would do most of the chronosequence work, and I would spend most my time on the bird work since I'm designing the biodiversity/fuels treatment synergy/tradeoff study and including it in my dissertation. 
 
@@ -143,14 +143,22 @@ Brian also mentioned that you may be open to funding some RA money for me, and I
 
 # Metaanlysis
 
+For this section I want to present some of the alternative possibilities for graphing the meta-analysis data in the fuels longevity report, and then discuss what conclusions we can talk about from the results.  I'll use basal area as the example again because its probably the metric with the tightest relationship to the other metrics.  Note that I haven't formatted my own datasets into this table yet, so these graphs aren't totally complete, but that will be the next step. 
+
 ```{r read and format metaanlysis data, message = FALSE}
 raw_ma <- read.csv(file.path(import_dir_ma, 'web_plot_digitizer_data.csv'))
-factored_ma <- raw_ma %>%
+ba_ma <- raw_ma %>%
+  filter(variable == 'basal_area') %>%
+  ## Proposing to keep entirely natural disturbances out of the scope of this report. 
   filter(treatment != 'wildfire_low') %>%
   mutate(treatment = factor(treatment, 
          levels = c('control', 'burn', 'thin', 'thinburn',
                     'control+beetle', 'burn+beetle', 'thin+beetle', 'thinburn+beetle',
                     'undifferentiated')))
+
+## Filter out sequoia outliers. 
+ba_ns <- ba_ma %>%
+  filter(value < 100)
 ```
 
 Graphing standardization:
@@ -172,4 +180,112 @@ treatment_colors <- c('control' = 'deepskyblue1',
                       'thin+beetle' = 'gray40',
                       'thinburn+beetle' = 'gray25',
                       'undifferentiated' = 'saddlebrown')
+```
+
+First is just the time/basal area relationship, colored by treatment.  
+
+The four basal area outliers come from Mantgem et al. 2016 California National Park mixed conifer stands, which include giant sequoia trees.  I show them in this first graph but then filter them out for the others. 
+
+```{r basic graph by treatment}
+ggplot(ba_ma, aes(x = years_post, y = value)) +
+    geom_jitter(aes(color = treatment), size = 3.5, alpha = 0.5) +
+    scale_color_manual(values = treatment_colors) +
+    coord_cartesian(xlim = c(-0.5, 23)) +
+    expand_limits(y = 0) +
+    ggtitle('Basic graph') +
+    xlab('Years after treatment') +
+    ylab('Basal area (m²/ha)') +
+    simpletheme
+```
+
+It may be useful to think about forest type, which gives us a predictable pattern:  
+
+```{r basic graph by forest type}
+ggplot(ba_ns, aes(x = years_post, y = value)) +
+    geom_jitter(aes(color = forest_type), size = 3.5, alpha = 0.5) +
+    #scale_color_manual(values = treatment_colors) +
+    coord_cartesian(xlim = c(-0.5, 23)) +
+    expand_limits(y = 0) +
+    ggtitle('Basic graph by forest type') +
+    xlab('Years after treatment') +
+    ylab('Basal area (m²/ha)') +
+    simpletheme
+```
+
+Or we could color by region, which helps sort out possible confounding of higher productivity, shorter term studies from the Sierra with decreasing basal area with time. Following the blue interior pnw plots, for example, it appears basal area increases with time as expected. 
+
+```{r basic graph by region}
+ggplot(ba_ns, aes(x = years_post, y = value)) +
+    geom_jitter(aes(color = region), size = 3.5, alpha = 0.5) +
+    #scale_color_manual(values = treatment_colors) +
+    coord_cartesian(xlim = c(-0.5, 23)) +
+    expand_limits(y = 0) +
+    ggtitle('Basic graph by region') +
+    xlab('Years after treatment') +
+    ylab('Basal area (m²/ha)') +
+    simpletheme
+```
+
+I'd be inclined to get at more detail by faceting by treatment.  We could consider cutting out the Crotteau (2018) study at the Lubrect, which would get rid of the beetle treatments and make presentation a lot simpler. 
+
+```{r facet graph by treatment}
+ggplot(ba_ns, aes(x = years_post, y = value)) +
+    geom_jitter(size = 3.5, alpha = 0.5) +
+    facet_wrap(vars(treatment)) +
+    #scale_color_manual(values = treatment_colors) +
+    coord_cartesian(xlim = c(-0.5, 23)) +
+    expand_limits(y = 0) +
+    ggtitle('Faceted graph by treatment') +
+    xlab('Years after treatment') +
+    ylab('Basal area (m²/ha)') +
+    simpletheme
+```
+
+And then we could color by region. 
+
+```{r facet graph by treatment}
+ggplot(ba_ns, aes(x = years_post, y = value)) +
+    geom_jitter(aes(color = region), size = 3.5, alpha = 0.5) +
+    facet_wrap(vars(treatment)) +
+    #scale_color_manual(values = treatment_colors) +
+    coord_cartesian(xlim = c(-0.5, 23)) +
+    expand_limits(y = 0) +
+    ggtitle('Faceted graph by treatment, colored by region') +
+    xlab('Years after treatment') +
+    ylab('Basal area (m²/ha)') +
+    simpletheme
+```
+
+And this is probably too much for a report, but we could add shapes for forest type, which helps show that the Sierra Nevada is dominating most of our mixed conifer sample (although our WA datasets will help balance it out a bit more). 
+
+```{r facet graph by treatment}
+ggplot(ba_ns, aes(x = years_post, y = value)) +
+    geom_jitter(aes(color = region, pch = forest_type), size = 3.5, alpha = 0.5) +
+    facet_wrap(vars(treatment)) +
+    #scale_color_manual(values = treatment_colors) +
+    coord_cartesian(xlim = c(-0.5, 23)) +
+    expand_limits(y = 0) +
+    ggtitle('Faceted graph by treatment, colored by region') +
+    xlab('Years after treatment') +
+    ylab('Basal area (m²/ha)') +
+    simpletheme
+```
+
+We could present the same information without the Crotteau study, to simplify things.
+
+```{r facet graph by treatment}
+gg_nc <- ba_ns %>%
+  filter(treatment == 'control' | treatment == 'burn' | treatment == 'thin' | 
+           treatment == 'thinburn' | treatment == 'undifferentiated') %>%
+  ggplot(aes(x = years_post, y = value)) +
+    geom_jitter(aes(color = region, pch = forest_type), size = 3.5, alpha = 0.5) +
+    facet_wrap(vars(treatment)) +
+    #scale_color_manual(values = treatment_colors) +
+    coord_cartesian(xlim = c(-0.5, 23)) +
+    expand_limits(y = 0) +
+    ggtitle('Faceted graph by treatment, colored by region') +
+    xlab('Years after treatment') +
+    ylab('Basal area (m²/ha)') +
+    simpletheme
+gg_nc
 ```
