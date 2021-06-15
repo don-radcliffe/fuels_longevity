@@ -243,7 +243,7 @@ ggplot(ba_ns, aes(x = years_post, y = value)) +
 
 And then we could color by region. 
 
-```{r facet graph by treatment}
+```{r facet graph by treatment colored by region}
 ggplot(ba_ns, aes(x = years_post, y = value)) +
     geom_jitter(aes(color = region), size = 3.5, alpha = 0.5) +
     facet_wrap(vars(treatment)) +
@@ -258,7 +258,7 @@ ggplot(ba_ns, aes(x = years_post, y = value)) +
 
 And this is probably too much for a report, but we could add shapes for forest type, which helps show that the Sierra Nevada is dominating most of our mixed conifer sample (although our WA datasets will help balance it out a bit more). 
 
-```{r facet graph by treatment}
+```{r facet graph by treatment colored by region and shaped by forest type}
 ggplot(ba_ns, aes(x = years_post, y = value)) +
     geom_jitter(aes(color = region, pch = forest_type), size = 3.5, alpha = 0.5) +
     facet_wrap(vars(treatment)) +
@@ -273,7 +273,7 @@ ggplot(ba_ns, aes(x = years_post, y = value)) +
 
 We could present the same information without the Crotteau study, to simplify things.
 
-```{r facet graph by treatment}
+```{r facet graph by treatment, Crotteau study removed}
 gg_nc <- ba_ns %>%
   filter(treatment == 'control' | treatment == 'burn' | treatment == 'thin' | 
            treatment == 'thinburn' | treatment == 'undifferentiated') %>%
@@ -289,3 +289,50 @@ gg_nc <- ba_ns %>%
     simpletheme
 gg_nc
 ```
+
+## Discussion points with Derek
+
+How strongly do we want to try and draw conclusions from these types of graphs?  Obviously I'll couch any language I use, because these studies all have nuanced variation in treatment implementation, study design, ecological context, etc., that we can't really capture here.   
+
+How in-depth do we present each Washington dataset, or do we just include it in the meta-analysis graph?  The latter may be the better option from the standpoint of trying to publish the data later. 
+
+
+Here's the proposed outline of the report:  
+
+1) Introduction
+    * Big picture issues with lack of knowledge on fuels treatment longevity.
+        + Fire scientists and pyrosilviculturalists advocating dramatic increase in pace and scale of treatment but we
+        aren't sure what the long term effects are and what an optimal maintentence treatment rotation might be. 
+        + Fuels treatments may decrease wood production value in long term by removing merchantable material in restoration         phase. 
+        + We need both synthesis and further study of long term treatment effects, for understanding of treatment rotation,         potential fire behavior, wood dynamics, biodiversity implications, and more.
+    * Factors that likely affect longevity:
+        + Productivity/forest type: growth and decomposition
+        + Treatment type
+        + Treatment intensity
+    * Possible ways to define longevity and/or decide treatment rotation.
+        + Buildup of fuels levels to pretreatment levels.
+        + Threshold of expected and desired fire behavior.
+        + Non fuel values that call for more frequent treatments than fuels longevity. 
+    * Our project:
+        + Collected and synthesized data from three fuels treatment longevity studies in Washington.
+        + Synthesized data from other longterm fuels treatment studies in the interior Western United States. 
+
+2) Methods
+    * Description of data collection at Mission Creek, Colville NF, and NPS Fire Effects, with map. 
+    * Description of data collection for meta-analysis.
+    
+3) Results
+    * Present one graph like those above, for each of the following core fuel and stand structure variables:
+        + Fine woody surface fuel
+        + Litter and duff mass
+        + Average height to live crown
+        + Canopy bulk density
+        + Basal area
+        + Density
+        + Quadratic mean diameter
+    * Note that not all studies report all these variables, and that for the stand structure variables, there are studies        out there we didn't include here because they didn't include surface fuels.  Most of our studies don't report their        shrub biomass.
+    
+4) Discussion and Conclusions
+        
+      
+
