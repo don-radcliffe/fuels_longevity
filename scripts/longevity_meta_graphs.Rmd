@@ -74,6 +74,7 @@ fwd_table <- factored %>%
            case_when(units == 'kg/m2' ~ 10 * value,
                      units == 'Mg/ha' ~ 1 * value)) %>%
   mutate(units = 'Mg/ha') %>%
+  ## Aggregating everything to FWD.
   pivot_wider(names_from = variable, values_from = value, 
               id_cols = c(study, treatment, years_post, forest_type, region, 
                           burn_season, thin_type, other)) %>%
