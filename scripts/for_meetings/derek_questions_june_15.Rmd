@@ -5,6 +5,8 @@ date: "6/14/2021"
 output: html_document
 ---
 
+This markdown script is designed to facilitate our meeting on Tuesday, June 15th, by providing an easy place to share questions and data in the same space.  The first section takes a look at the Colville dataset with an eye towards the funding questions you may have, and the second section offers alternate presentations of the meta-analysis data for the report. 
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -19,7 +21,7 @@ import_dir_cnf <- here::here('data', 'colville')
 import_dir_ma <- here::here('data')
 ```
 
-## Colville
+#Colville
 ```{r read and format colville data, message = FALSE}
 ## Colville Data
 raw_cnf_trees <- read.csv(file.path(import_dir_cnf, 'trees_tidy.csv'))
@@ -31,7 +33,44 @@ cnf_trees <- raw_cnf_trees %>%
   filter(status != 'dead')
 ```
 
-## Metaanlysis
+Some graphing standardization:
+```{r graphing code}
+## Theme for graphing.
+simpletheme <- theme(panel.grid.major = element_blank(), 
+                     panel.grid.minor = element_blank(),
+                     panel.background = element_blank()) +
+  theme(plot.title = element_text(hjust = 0.5)) +
+  theme(axis.line = element_line(size = 0.2, color = 'black')) +
+  theme(legend.key=element_blank(), legend.background=element_blank()) +
+  xlab('years since burning') +
+  ylab('basal area (m²/ha)')
+
+treatment_colors <- c('control' = 'deepskyblue1',
+                      'burn' = 'red3', 
+                      'thin' = 'gold2',
+                      'thinburn' = 'purple3',
+                      'control+beetle' = 'gray70',
+                      'burn+beetle' = 'gray55',
+                      'thin+beetle' = 'gray40',
+                      'thinburn+beetle' = 'gray25',
+                      'undifferentiated' = 'saddlebrown')
+```
+
+##Graphs
+
+Below I graph basal area against time since treatment, as a visual example of our Colville study so we can talk about where we could fill in the study design.  We've got 79 plots here that meet our criteria of being a thin+burn treatment in a dry forest, and what's not included here that can be included in the Colville study is at least 50 'control' plots: those pretreatment plots from the East Wedge and Walker projects that don't overlap with any treatments recorded in the FACTS database. 
+
+I received plot-level-summarized data from Jason Clark, so unfortunately I can't be 100% sure that I processed my data in the same way. The Colville tree graphs are for trees greater than five inches. 
+
+```{r graph basal area, height = 4, width = 8}
+ba_all <- cnf_trees %>%
+  ggplot(aes(x = years_post, y = basal_area, color = lead)) +
+    geom_point(size = 3, alpha = 0.6) +
+    ggtitle('Colville chronosquence')
+ba_all
+```
+
+#Metaanlysis
 ```{r read and format metaanlysis data, message = FALSE}
 raw_ma <- read.csv(file.path(import_dir_ma, 'web_plot_digitizer_data.csv'))
 factored_ma <- raw_ma %>%
@@ -42,7 +81,7 @@ factored_ma <- raw_ma %>%
                     'undifferentiated')))
 ```
 
-Some graphing standardization:
+Graphing standardization:
 ```{r graphing code}
 ## Theme for graphing.
 simpletheme <- theme(panel.grid.major = element_blank(), 
@@ -62,4 +101,3 @@ treatment_colors <- c('control' = 'deepskyblue1',
                       'thinburn+beetle' = 'gray25',
                       'undifferentiated' = 'saddlebrown')
 ```
-
