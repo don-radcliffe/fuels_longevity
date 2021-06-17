@@ -20,13 +20,16 @@ export_dir_ma <- here::here('plots')
 
 raw <- read.csv(file.path(import_dir_ma, 'web_plot_digitizer_data.csv'))
 factored <- raw %>%
-  filter(treatment != 'wildfire_low') %>%
+  filter(treatment != 'wildfire_low' & treatment != 'wildfire') %>%
   mutate(treatment = factor(treatment, 
          levels = c('control', 'burn', 'thin', 'thinburn',
                     'control+beetle', 'burn+beetle', 'thin+beetle', 'thinburn+beetle',
                     'undifferentiated'))) %>%
-  mutate(region = ifelse(region == 'sierra_nevada', 'Sierra Nevada', 'Other')) %>%
-  mutate(region = factor(region, levels = c('Sierra Nevada', 'Other')))
+  mutate(region = case_when(
+    region == 'washington' ~ 'Washington',
+    region == 'sierra_nevada' ~ 'Sierra Nevada',
+    TRUE ~ 'Other')) %>%
+  mutate(region = factor(region, levels = c('Washington', 'Sierra Nevada', 'Other')))
 ```
 
 Some graphing standardization:
@@ -49,13 +52,17 @@ treatment_colors <- c('control' = 'deepskyblue1',
                       'thinburn+beetle' = 'gray25',
                       'undifferentiated' = 'saddlebrown')
 
+region_colors <- c('Washington' = 'purple3',
+                   'Sierra Nevada' = 'red2',
+                   'Other' = 'gold2')
+
 ## Graphing function with all the repetitive components.
 gg_fun <- function(table, variable) {
   yvar = enquo(variable)
   ggplot(table, aes(x = years_post, y = !!yvar)) +
-    geom_jitter(aes(color = treatment), size = 3.5, alpha = 0.5) +
-    facet_wrap(vars(region)) +
-    scale_color_manual(values = treatment_colors) +
+    geom_jitter(aes(color = region), size = 3.5, alpha = 0.5) +
+    facet_wrap(vars(treatment)) +
+    scale_color_manual(values = region_colors) +
     coord_cartesian(xlim = c(-0.5, 23)) +
     expand_limits(y = 0) +
     xlab('Years after treatment') +
