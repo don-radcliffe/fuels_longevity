@@ -10,7 +10,7 @@ value,variable,units,years_post,treatment,study,forest_type,region,burn_season,t
 0.69,fwd,kg/m2,0,thinburn,hood,Ponderosa Pine,interior_pnw,fall,commercial,NA,NA
 0.35,fwd,kg/m2,1,thinburn,hood,Ponderosa Pine,interior_pnw,fall,commercial,NA,NA
 0.41,fwd,kg/m2,12,thinburn,hood,Ponderosa Pine,interior_pnw,fall,commercial,NA,NA
-0.20,fwd,kg/m2,22,thinburn,hood,Ponderosa Pine,interior_pnw,fall,commercial,NA,NA
+0.2,fwd,kg/m2,22,thinburn,hood,Ponderosa Pine,interior_pnw,fall,commercial,NA,NA
 0.57,fwd,kg/m2,12,control,hood,Ponderosa Pine,interior_pnw,NA,shelterwood,NA,NA
 0.53,fwd,kg/m2,22,control,hood,Ponderosa Pine,interior_pnw,NA,shelterwood,NA,NA
 0.86,fwd,kg/m2,12,thin,hood,Ponderosa Pine,interior_pnw,NA,shelterwood,NA,NA
@@ -33,7 +33,7 @@ value,variable,units,years_post,treatment,study,forest_type,region,burn_season,t
 0.31,cwd,kg/m2,22,thinburn,hood,Ponderosa Pine,interior_pnw,spring,commercial,NA,NA
 0.88,cwd,kg/m2,0,thinburn,hood,Ponderosa Pine,interior_pnw,fall,commercial,NA,NA
 0.11,cwd,kg/m2,1,thinburn,hood,Ponderosa Pine,interior_pnw,fall,commercial,NA,NA
-0.50,cwd,kg/m2,12,thinburn,hood,Ponderosa Pine,interior_pnw,fall,commercial,NA,NA
+0.5,cwd,kg/m2,12,thinburn,hood,Ponderosa Pine,interior_pnw,fall,commercial,NA,NA
 0.47,cwd,kg/m2,22,thinburn,hood,Ponderosa Pine,interior_pnw,fall,commercial,NA,NA
 1.49,cwd,kg/m2,12,control,hood,Ponderosa Pine,interior_pnw,NA,shelterwood,NA,NA
 1.47,cwd,kg/m2,22,control,hood,Ponderosa Pine,interior_pnw,NA,shelterwood,NA,NA
@@ -61,14 +61,14 @@ value,variable,units,years_post,treatment,study,forest_type,region,burn_season,t
 1.21,litterduff,kg/m2,22,thinburn,hood,Ponderosa Pine,interior_pnw,fall,commercial,NA,NA
 3.39,litterduff,kg/m2,12,control,hood,Ponderosa Pine,interior_pnw,NA,shelterwood,NA,NA
 1.97,litterduff,kg/m2,22,control,hood,Ponderosa Pine,interior_pnw,NA,shelterwood,NA,NA
-2.90,litterduff,kg/m2,12,thin,hood,Ponderosa Pine,interior_pnw,NA,shelterwood,NA,NA
+2.9,litterduff,kg/m2,12,thin,hood,Ponderosa Pine,interior_pnw,NA,shelterwood,NA,NA
 2.07,litterduff,kg/m2,22,thin,hood,Ponderosa Pine,interior_pnw,NA,shelterwood,NA,NA
 2.77,litterduff,kg/m2,0,thinburn,hood,Ponderosa Pine,interior_pnw,spring,shelterwood,wet burn,NA
-2.30,litterduff,kg/m2,1,thinburn,hood,Ponderosa Pine,interior_pnw,spring,shelterwood,wet burn,NA
-1.90,litterduff,kg/m2,12,thinburn,hood,Ponderosa Pine,interior_pnw,spring,shelterwood,wet burn,NA
+2.3,litterduff,kg/m2,1,thinburn,hood,Ponderosa Pine,interior_pnw,spring,shelterwood,wet burn,NA
+1.9,litterduff,kg/m2,12,thinburn,hood,Ponderosa Pine,interior_pnw,spring,shelterwood,wet burn,NA
 1.31,litterduff,kg/m2,22,thinburn,hood,Ponderosa Pine,interior_pnw,spring,shelterwood,wet burn,NA
 3.54,litterduff,kg/m2,0,thinburn,hood,Ponderosa Pine,interior_pnw,spring,shelterwood,dry burn,NA
-2.20,litterduff,kg/m2,1,thinburn,hood,Ponderosa Pine,interior_pnw,spring,shelterwood,dry burn,NA
+2.2,litterduff,kg/m2,1,thinburn,hood,Ponderosa Pine,interior_pnw,spring,shelterwood,dry burn,NA
 1.61,litterduff,kg/m2,12,thinburn,hood,Ponderosa Pine,interior_pnw,spring,shelterwood,dry burn,NA
 1.39,litterduff,kg/m2,22,thinburn,hood,Ponderosa Pine,interior_pnw,spring,shelterwood,dry burn,NA
 348,density,trees/ha,1,control,hood,Ponderosa Pine,interior_pnw,NA,commercial,NA,NA
@@ -96,11 +96,11 @@ value,variable,units,years_post,treatment,study,forest_type,region,burn_season,t
 131,density,trees/ha,12,thinburn,hood,Ponderosa Pine,interior_pnw,spring,shelterwood,dry burn,NA
 133,density,trees/ha,22,thinburn,hood,Ponderosa Pine,interior_pnw,spring,shelterwood,dry burn,NA
 23.7,basal_area,m2/ha,1,control,hood,Ponderosa Pine,interior_pnw,NA,commercial,NA,NA
-30.0,basal_area,m2/ha,12,control,hood,Ponderosa Pine,interior_pnw,NA,commercial,NA,NA
-29.0,basal_area,m2/ha,22,control,hood,Ponderosa Pine,interior_pnw,NA,commercial,NA,NA
+30,basal_area,m2/ha,12,control,hood,Ponderosa Pine,interior_pnw,NA,commercial,NA,NA
+29,basal_area,m2/ha,22,control,hood,Ponderosa Pine,interior_pnw,NA,commercial,NA,NA
 12.9,basal_area,m2/ha,1,thin,hood,Ponderosa Pine,interior_pnw,NA,commercial,NA,NA
 17.4,basal_area,m2/ha,12,thin,hood,Ponderosa Pine,interior_pnw,NA,commercial,NA,NA
-21.0,basal_area,m2/ha,22,thin,hood,Ponderosa Pine,interior_pnw,NA,commercial,NA,NA
+21,basal_area,m2/ha,22,thin,hood,Ponderosa Pine,interior_pnw,NA,commercial,NA,NA
 12.9,basal_area,m2/ha,1,thinburn,hood,Ponderosa Pine,interior_pnw,spring,commercial,NA,NA
 16.7,basal_area,m2/ha,12,thinburn,hood,Ponderosa Pine,interior_pnw,spring,commercial,NA,NA
 20.8,basal_area,m2/ha,22,thinburn,hood,Ponderosa Pine,interior_pnw,spring,commercial,NA,NA
@@ -111,14 +111,14 @@ value,variable,units,years_post,treatment,study,forest_type,region,burn_season,t
 28.3,basal_area,m2/ha,12,control,hood,Ponderosa Pine,interior_pnw,NA,shelterwood,NA,NA
 29.2,basal_area,m2/ha,22,control,hood,Ponderosa Pine,interior_pnw,NA,shelterwood,NA,NA
 11.9,basal_area,m2/ha,1,thin,hood,Ponderosa Pine,interior_pnw,NA,shelterwood,NA,NA
-15.0,basal_area,m2/ha,12,thin,hood,Ponderosa Pine,interior_pnw,NA,shelterwood,NA,NA
+15,basal_area,m2/ha,12,thin,hood,Ponderosa Pine,interior_pnw,NA,shelterwood,NA,NA
 17.9,basal_area,m2/ha,22,thin,hood,Ponderosa Pine,interior_pnw,NA,shelterwood,NA,NA
-10.0,basal_area,m2/ha,1,thinburn,hood,Ponderosa Pine,interior_pnw,spring,shelterwood,wet burn,NA
+10,basal_area,m2/ha,1,thinburn,hood,Ponderosa Pine,interior_pnw,spring,shelterwood,wet burn,NA
 12.5,basal_area,m2/ha,12,thinburn,hood,Ponderosa Pine,interior_pnw,spring,shelterwood,wet burn,NA
 15.5,basal_area,m2/ha,22,thinburn,hood,Ponderosa Pine,interior_pnw,spring,shelterwood,wet burn,NA
 11.6,basal_area,m2/ha,1,thinburn,hood,Ponderosa Pine,interior_pnw,spring,shelterwood,dry burn,NA
 13.2,basal_area,m2/ha,12,thinburn,hood,Ponderosa Pine,interior_pnw,spring,shelterwood,dry burn,NA
-16.0,basal_area,m2/ha,22,thinburn,hood,Ponderosa Pine,interior_pnw,spring,shelterwood,dry burn,NA
+16,basal_area,m2/ha,22,thinburn,hood,Ponderosa Pine,interior_pnw,spring,shelterwood,dry burn,NA
 30.1,qmd,cm,1,control,hood,Ponderosa Pine,interior_pnw,NA,commercial,NA,NA
 33.1,qmd,cm,12,control,hood,Ponderosa Pine,interior_pnw,NA,commercial,NA,NA
 35.5,qmd,cm,22,control,hood,Ponderosa Pine,interior_pnw,NA,commercial,NA,NA
@@ -479,14 +479,14 @@ value,variable,units,years_post,treatment,study,forest_type,region,burn_season,t
 63.6,crowning_index,km/hour,15,thin+beetle,crotteau,Ponderosa Pine,interior_pnw,NA,below,NA,NA
 91.1,crowning_index,km/hour,1,thinburn+beetle,crotteau,Ponderosa Pine,interior_pnw,spring,below,NA,NA
 92.5,crowning_index,km/hour,14,thinburn+beetle,crotteau,Ponderosa Pine,interior_pnw,spring,below,NA,NA
-480.0,density,trees/ha,0,control,stephens,Mixed Conifer,sierra_nevada,NA,NA,NA,NA
-472.0,density,trees/ha,1,control,stephens,Mixed Conifer,sierra_nevada,NA,NA,NA,NA
-470.0,density,trees/ha,7,control,stephens,Mixed Conifer,sierra_nevada,NA,NA,NA,NA
-415.0,density,trees/ha,0,burn,stephens,Mixed Conifer,sierra_nevada,fall,NA,NA,NA
-386.0,density,trees/ha,1,burn,stephens,Mixed Conifer,sierra_nevada,fall,NA,NA,NA
-313.0,density,trees/ha,7,burn,stephens,Mixed Conifer,sierra_nevada,fall,NA,NA,NA
-411.0,density,trees/ha,0,thin,stephens,Mixed Conifer,sierra_nevada,NA,two_stage,NA,NA
-252.0,density,trees/ha,1,thin,stephens,Mixed Conifer,sierra_nevada,NA,two_stage,NA,NA
+480,density,trees/ha,0,control,stephens,Mixed Conifer,sierra_nevada,NA,NA,NA,NA
+472,density,trees/ha,1,control,stephens,Mixed Conifer,sierra_nevada,NA,NA,NA,NA
+470,density,trees/ha,7,control,stephens,Mixed Conifer,sierra_nevada,NA,NA,NA,NA
+415,density,trees/ha,0,burn,stephens,Mixed Conifer,sierra_nevada,fall,NA,NA,NA
+386,density,trees/ha,1,burn,stephens,Mixed Conifer,sierra_nevada,fall,NA,NA,NA
+313,density,trees/ha,7,burn,stephens,Mixed Conifer,sierra_nevada,fall,NA,NA,NA
+411,density,trees/ha,0,thin,stephens,Mixed Conifer,sierra_nevada,NA,two_stage,NA,NA
+252,density,trees/ha,1,thin,stephens,Mixed Conifer,sierra_nevada,NA,two_stage,NA,NA
 252,density,trees/ha,7,thin,stephens,Mixed Conifer,sierra_nevada,NA,two_stage,NA,NA
 415,density,trees/ha,0,thinburn,stephens,Mixed Conifer,sierra_nevada,fall,two_stage,NA,NA
 236,density,trees/ha,1,thinburn,stephens,Mixed Conifer,sierra_nevada,fall,two_stage,NA,NA
@@ -915,106 +915,106 @@ value,variable,units,years_post,treatment,study,forest_type,region,burn_season,t
 752,seedling_density,seedlings/ha,6,undifferentiated,chiono,Ponderosa Pine,sierra_nevada,unknown,NA,NA,NA
 1654,seedling_density,seedlings/ha,10,undifferentiated,chiono,Ponderosa Pine,sierra_nevada,unknown,NA,NA,NA
 2857,seedling_density,seedlings/ha,0,control,chiono,Ponderosa Pine,sierra_nevada,unknown,NA,NA,NA
-23.907,basal_area,m2/ha,0,control,radcliffe1,both,washington,spring,below,NA,NA
-30.424,basal_area,m2/ha,19,control,radcliffe1,both,washington,spring,below,NA,NA
-529.167,density,trees/ha,0,control,radcliffe1,both,washington,spring,below,NA,NA
-327.596,density,trees/ha,19,control,radcliffe1,both,washington,spring,below,NA,NA
-27,qmd,cm,0,control,radcliffe1,both,washington,spring,below,NA,NA
-39.312,qmd,cm,19,control,radcliffe1,both,washington,spring,below,NA,NA
-1.371,duff,Mg/ha,0,control,radcliffe1,both,washington,spring,below,NA,NA
-1.142,duff,Mg/ha,19,control,radcliffe1,both,washington,spring,below,NA,NA
-3.625,litter,Mg/ha,0,control,radcliffe1,both,washington,spring,below,NA,NA
-4.083,litter,Mg/ha,19,control,radcliffe1,both,washington,spring,below,NA,NA
-0.529,one_hour,Mg/ha,0,control,radcliffe1,both,washington,spring,below,NA,NA
-0.399,one_hour,Mg/ha,19,control,radcliffe1,both,washington,spring,below,NA,NA
-1.95,ten_hour,Mg/ha,0,control,radcliffe1,both,washington,spring,below,NA,NA
-4.875,ten_hour,Mg/ha,19,control,radcliffe1,both,washington,spring,below,NA,NA
-2.196,hundred_hour,Mg/ha,0,control,radcliffe1,both,washington,spring,below,NA,NA
-3.189,hundred_hour,Mg/ha,19,control,radcliffe1,both,washington,spring,below,NA,NA
-26.262,thousand_sound,Mg/ha,0,control,radcliffe1,both,washington,spring,below,NA,NA
-61.504,thousand_sound,Mg/ha,19,control,radcliffe1,both,washington,spring,below,NA,NA
-16.517,thousand_rotten,Mg/ha,0,control,radcliffe1,both,washington,spring,below,NA,NA
-6.287,thousand_rotten,Mg/ha,19,control,radcliffe1,both,washington,spring,below,NA,NA
-24.249,basal_area,m2/ha,0,burn,radcliffe1,both,washington,spring,below,NA,NA
-27.643,basal_area,m2/ha,14,burn,radcliffe1,both,washington,spring,below,NA,NA
-798.6,density,trees/ha,0,burn,radcliffe1,both,washington,spring,below,NA,NA
-352.708,density,trees/ha,14,burn,radcliffe1,both,washington,spring,below,NA,NA
-22.96,qmd,cm,0,burn,radcliffe1,both,washington,spring,below,NA,NA
-35.3415,qmd,cm,14,burn,radcliffe1,both,washington,spring,below,NA,NA
-2.248,duff,Mg/ha,0,burn,radcliffe1,both,washington,spring,below,NA,NA
-1.562,duff,Mg/ha,14,burn,radcliffe1,both,washington,spring,below,NA,NA
-3.6925,litter,Mg/ha,0,burn,radcliffe1,both,washington,spring,below,NA,NA
-3.438,litter,Mg/ha,14,burn,radcliffe1,both,washington,spring,below,NA,NA
-0.61,one_hour,Mg/ha,0,burn,radcliffe1,both,washington,spring,below,NA,NA
-1.1825,one_hour,Mg/ha,14,burn,radcliffe1,both,washington,spring,below,NA,NA
-2.8305,ten_hour,Mg/ha,0,burn,radcliffe1,both,washington,spring,below,NA,NA
-6.7455,ten_hour,Mg/ha,14,burn,radcliffe1,both,washington,spring,below,NA,NA
-4.9575,hundred_hour,Mg/ha,0,burn,radcliffe1,both,washington,spring,below,NA,NA
-5.2465,hundred_hour,Mg/ha,14,burn,radcliffe1,both,washington,spring,below,NA,NA
-78.834,thousand_sound,Mg/ha,0,burn,radcliffe1,both,washington,spring,below,NA,NA
-104.953,thousand_sound,Mg/ha,14,burn,radcliffe1,both,washington,spring,below,NA,NA
-48.4795,thousand_rotten,Mg/ha,0,burn,radcliffe1,both,washington,spring,below,NA,NA
-33.3035,thousand_rotten,Mg/ha,14,burn,radcliffe1,both,washington,spring,below,NA,NA
-25.672,basal_area,m2/ha,0,thin,radcliffe1,both,washington,spring,below,NA,NA
-28.7885,basal_area,m2/ha,17,thin,radcliffe1,both,washington,spring,below,NA,NA
-566.595,density,trees/ha,0,thin,radcliffe1,both,washington,spring,below,NA,NA
-593.584,density,trees/ha,17,thin,radcliffe1,both,washington,spring,below,NA,NA
-26.7245,qmd,cm,0,thin,radcliffe1,both,washington,spring,below,NA,NA
-42.0605,qmd,cm,17,thin,radcliffe1,both,washington,spring,below,NA,NA
-1.5885,duff,Mg/ha,0,thin,radcliffe1,both,washington,spring,below,NA,NA
-2.3915,duff,Mg/ha,17,thin,radcliffe1,both,washington,spring,below,NA,NA
-3.5625,litter,Mg/ha,0,thin,radcliffe1,both,washington,spring,below,NA,NA
-3.6955,litter,Mg/ha,17,thin,radcliffe1,both,washington,spring,below,NA,NA
-0.4535,one_hour,Mg/ha,0,thin,radcliffe1,both,washington,spring,below,NA,NA
-0.964,one_hour,Mg/ha,17,thin,radcliffe1,both,washington,spring,below,NA,NA
-1.7285,ten_hour,Mg/ha,0,thin,radcliffe1,both,washington,spring,below,NA,NA
-8.383,ten_hour,Mg/ha,17,thin,radcliffe1,both,washington,spring,below,NA,NA
-5.496,hundred_hour,Mg/ha,0,thin,radcliffe1,both,washington,spring,below,NA,NA
-10.2125,hundred_hour,Mg/ha,17,thin,radcliffe1,both,washington,spring,below,NA,NA
-87.097,thousand_sound,Mg/ha,0,thin,radcliffe1,both,washington,spring,below,NA,NA
-121.93,thousand_sound,Mg/ha,17,thin,radcliffe1,both,washington,spring,below,NA,NA
-99.5275,thousand_rotten,Mg/ha,0,thin,radcliffe1,both,washington,spring,below,NA,NA
-71.2745,thousand_rotten,Mg/ha,17,thin,radcliffe1,both,washington,spring,below,NA,NA
-25.39033333,basal_area,m2/ha,0,thinburn,radcliffe1,both,washington,spring,below,NA,NA
-15.28266667,basal_area,m2/ha,14,thinburn,radcliffe1,both,washington,spring,below,NA,NA
-697.2853333,density,trees/ha,0,thinburn,radcliffe1,both,washington,spring,below,NA,NA
-243.248,density,trees/ha,14,thinburn,radcliffe1,both,washington,spring,below,NA,NA
-25.85333333,qmd,cm,0,thinburn,radcliffe1,both,washington,spring,below,NA,NA
-39.28733333,qmd,cm,14,thinburn,radcliffe1,both,washington,spring,below,NA,NA
-1.014666667,duff,Mg/ha,0,thinburn,radcliffe1,both,washington,spring,below,NA,NA
-1.149666667,duff,Mg/ha,14,thinburn,radcliffe1,both,washington,spring,below,NA,NA
-3.197,litter,Mg/ha,0,thinburn,radcliffe1,both,washington,spring,below,NA,NA
-3.007,litter,Mg/ha,14,thinburn,radcliffe1,both,washington,spring,below,NA,NA
-1.02,one_hour,Mg/ha,0,thinburn,radcliffe1,both,washington,spring,below,NA,NA
-0.899,one_hour,Mg/ha,14,thinburn,radcliffe1,both,washington,spring,below,NA,NA
-2.491666667,ten_hour,Mg/ha,0,thinburn,radcliffe1,both,washington,spring,below,NA,NA
-5.143333333,ten_hour,Mg/ha,14,thinburn,radcliffe1,both,washington,spring,below,NA,NA
-4.017,hundred_hour,Mg/ha,0,thinburn,radcliffe1,both,washington,spring,below,NA,NA
-5.077666667,hundred_hour,Mg/ha,14,thinburn,radcliffe1,both,washington,spring,below,NA,NA
-77.84733333,thousand_sound,Mg/ha,0,thinburn,radcliffe1,both,washington,spring,below,NA,NA
-120.212,thousand_sound,Mg/ha,14,thinburn,radcliffe1,both,washington,spring,below,NA,NA
-52.47766667,thousand_rotten,Mg/ha,0,thinburn,radcliffe1,both,washington,spring,below,NA,NA
-54.86833333,thousand_rotten,Mg/ha,14,thinburn,radcliffe1,both,washington,spring,below,NA,NA
-33.9515,basal_area,m2/ha,0,wildfire_low,radcliffe1,both,washington,spring,below,NA,NA
-25.742,basal_area,m2/ha,8,wildfire_low,radcliffe1,both,washington,spring,below,NA,NA
-584.8035,density,trees/ha,0,wildfire_low,radcliffe1,both,washington,spring,below,NA,NA
-254.6175,density,trees/ha,8,wildfire_low,radcliffe1,both,washington,spring,below,NA,NA
-32.321,qmd,cm,0,wildfire_low,radcliffe1,both,washington,spring,below,NA,NA
-41.944,qmd,cm,8,wildfire_low,radcliffe1,both,washington,spring,below,NA,NA
-0.946,duff,Mg/ha,0,wildfire_low,radcliffe1,both,washington,spring,below,NA,NA
-1.016,duff,Mg/ha,8,wildfire_low,radcliffe1,both,washington,spring,below,NA,NA
-3.4335,litter,Mg/ha,0,wildfire_low,radcliffe1,both,washington,spring,below,NA,NA
-2.7885,litter,Mg/ha,8,wildfire_low,radcliffe1,both,washington,spring,below,NA,NA
-1.334,one_hour,Mg/ha,0,wildfire_low,radcliffe1,both,washington,spring,below,NA,NA
-3.029,one_hour,Mg/ha,8,wildfire_low,radcliffe1,both,washington,spring,below,NA,NA
-2.3925,ten_hour,Mg/ha,0,wildfire_low,radcliffe1,both,washington,spring,below,NA,NA
-5.271,ten_hour,Mg/ha,8,wildfire_low,radcliffe1,both,washington,spring,below,NA,NA
-2.5515,hundred_hour,Mg/ha,0,wildfire_low,radcliffe1,both,washington,spring,below,NA,NA
-2.8615,hundred_hour,Mg/ha,8,wildfire_low,radcliffe1,both,washington,spring,below,NA,NA
-36.911,thousand_sound,Mg/ha,0,wildfire_low,radcliffe1,both,washington,spring,below,NA,NA
-107.1135,thousand_sound,Mg/ha,8,wildfire_low,radcliffe1,both,washington,spring,below,NA,NA
-16.069,thousand_rotten,Mg/ha,0,wildfire_low,radcliffe1,both,washington,spring,below,NA,NA
-3.145,thousand_rotten,Mg/ha,8,wildfire_low,radcliffe1,both,washington,spring,below,NA,NA
+23.907,basal_area,m2/ha,0,control,radcliffe1,Both,washington,spring,below,NA,NA
+30.424,basal_area,m2/ha,19,control,radcliffe1,Both,washington,spring,below,NA,NA
+529.167,density,trees/ha,0,control,radcliffe1,Both,washington,spring,below,NA,NA
+327.596,density,trees/ha,19,control,radcliffe1,Both,washington,spring,below,NA,NA
+27,qmd,cm,0,control,radcliffe1,Both,washington,spring,below,NA,NA
+39.312,qmd,cm,19,control,radcliffe1,Both,washington,spring,below,NA,NA
+1.371,duff,Mg/ha,0,control,radcliffe1,Both,washington,spring,below,NA,NA
+1.142,duff,Mg/ha,19,control,radcliffe1,Both,washington,spring,below,NA,NA
+3.625,litter,Mg/ha,0,control,radcliffe1,Both,washington,spring,below,NA,NA
+4.083,litter,Mg/ha,19,control,radcliffe1,Both,washington,spring,below,NA,NA
+0.529,one_hour,Mg/ha,0,control,radcliffe1,Both,washington,spring,below,NA,NA
+0.399,one_hour,Mg/ha,19,control,radcliffe1,Both,washington,spring,below,NA,NA
+1.95,ten_hour,Mg/ha,0,control,radcliffe1,Both,washington,spring,below,NA,NA
+4.875,ten_hour,Mg/ha,19,control,radcliffe1,Both,washington,spring,below,NA,NA
+2.196,hundred_hour,Mg/ha,0,control,radcliffe1,Both,washington,spring,below,NA,NA
+3.189,hundred_hour,Mg/ha,19,control,radcliffe1,Both,washington,spring,below,NA,NA
+26.262,thousand_sound,Mg/ha,0,control,radcliffe1,Both,washington,spring,below,NA,NA
+61.504,thousand_sound,Mg/ha,19,control,radcliffe1,Both,washington,spring,below,NA,NA
+16.517,thousand_rotten,Mg/ha,0,control,radcliffe1,Both,washington,spring,below,NA,NA
+6.287,thousand_rotten,Mg/ha,19,control,radcliffe1,Both,washington,spring,below,NA,NA
+24.249,basal_area,m2/ha,0,burn,radcliffe1,Both,washington,spring,below,NA,NA
+27.643,basal_area,m2/ha,14,burn,radcliffe1,Both,washington,spring,below,NA,NA
+798.6,density,trees/ha,0,burn,radcliffe1,Both,washington,spring,below,NA,NA
+352.708,density,trees/ha,14,burn,radcliffe1,Both,washington,spring,below,NA,NA
+22.96,qmd,cm,0,burn,radcliffe1,Both,washington,spring,below,NA,NA
+35.3415,qmd,cm,14,burn,radcliffe1,Both,washington,spring,below,NA,NA
+2.248,duff,Mg/ha,0,burn,radcliffe1,Both,washington,spring,below,NA,NA
+1.562,duff,Mg/ha,14,burn,radcliffe1,Both,washington,spring,below,NA,NA
+3.6925,litter,Mg/ha,0,burn,radcliffe1,Both,washington,spring,below,NA,NA
+3.438,litter,Mg/ha,14,burn,radcliffe1,Both,washington,spring,below,NA,NA
+0.61,one_hour,Mg/ha,0,burn,radcliffe1,Both,washington,spring,below,NA,NA
+1.1825,one_hour,Mg/ha,14,burn,radcliffe1,Both,washington,spring,below,NA,NA
+2.8305,ten_hour,Mg/ha,0,burn,radcliffe1,Both,washington,spring,below,NA,NA
+6.7455,ten_hour,Mg/ha,14,burn,radcliffe1,Both,washington,spring,below,NA,NA
+4.9575,hundred_hour,Mg/ha,0,burn,radcliffe1,Both,washington,spring,below,NA,NA
+5.2465,hundred_hour,Mg/ha,14,burn,radcliffe1,Both,washington,spring,below,NA,NA
+78.834,thousand_sound,Mg/ha,0,burn,radcliffe1,Both,washington,spring,below,NA,NA
+104.953,thousand_sound,Mg/ha,14,burn,radcliffe1,Both,washington,spring,below,NA,NA
+48.4795,thousand_rotten,Mg/ha,0,burn,radcliffe1,Both,washington,spring,below,NA,NA
+33.3035,thousand_rotten,Mg/ha,14,burn,radcliffe1,Both,washington,spring,below,NA,NA
+25.672,basal_area,m2/ha,0,thin,radcliffe1,Both,washington,spring,below,NA,NA
+28.7885,basal_area,m2/ha,17,thin,radcliffe1,Both,washington,spring,below,NA,NA
+566.595,density,trees/ha,0,thin,radcliffe1,Both,washington,spring,below,NA,NA
+593.584,density,trees/ha,17,thin,radcliffe1,Both,washington,spring,below,NA,NA
+26.7245,qmd,cm,0,thin,radcliffe1,Both,washington,spring,below,NA,NA
+42.0605,qmd,cm,17,thin,radcliffe1,Both,washington,spring,below,NA,NA
+1.5885,duff,Mg/ha,0,thin,radcliffe1,Both,washington,spring,below,NA,NA
+2.3915,duff,Mg/ha,17,thin,radcliffe1,Both,washington,spring,below,NA,NA
+3.5625,litter,Mg/ha,0,thin,radcliffe1,Both,washington,spring,below,NA,NA
+3.6955,litter,Mg/ha,17,thin,radcliffe1,Both,washington,spring,below,NA,NA
+0.4535,one_hour,Mg/ha,0,thin,radcliffe1,Both,washington,spring,below,NA,NA
+0.964,one_hour,Mg/ha,17,thin,radcliffe1,Both,washington,spring,below,NA,NA
+1.7285,ten_hour,Mg/ha,0,thin,radcliffe1,Both,washington,spring,below,NA,NA
+8.383,ten_hour,Mg/ha,17,thin,radcliffe1,Both,washington,spring,below,NA,NA
+5.496,hundred_hour,Mg/ha,0,thin,radcliffe1,Both,washington,spring,below,NA,NA
+10.2125,hundred_hour,Mg/ha,17,thin,radcliffe1,Both,washington,spring,below,NA,NA
+87.097,thousand_sound,Mg/ha,0,thin,radcliffe1,Both,washington,spring,below,NA,NA
+121.93,thousand_sound,Mg/ha,17,thin,radcliffe1,Both,washington,spring,below,NA,NA
+99.5275,thousand_rotten,Mg/ha,0,thin,radcliffe1,Both,washington,spring,below,NA,NA
+71.2745,thousand_rotten,Mg/ha,17,thin,radcliffe1,Both,washington,spring,below,NA,NA
+25.39033333,basal_area,m2/ha,0,thinburn,radcliffe1,Both,washington,spring,below,NA,NA
+15.28266667,basal_area,m2/ha,14,thinburn,radcliffe1,Both,washington,spring,below,NA,NA
+697.2853333,density,trees/ha,0,thinburn,radcliffe1,Both,washington,spring,below,NA,NA
+243.248,density,trees/ha,14,thinburn,radcliffe1,Both,washington,spring,below,NA,NA
+25.85333333,qmd,cm,0,thinburn,radcliffe1,Both,washington,spring,below,NA,NA
+39.28733333,qmd,cm,14,thinburn,radcliffe1,Both,washington,spring,below,NA,NA
+1.014666667,duff,Mg/ha,0,thinburn,radcliffe1,Both,washington,spring,below,NA,NA
+1.149666667,duff,Mg/ha,14,thinburn,radcliffe1,Both,washington,spring,below,NA,NA
+3.197,litter,Mg/ha,0,thinburn,radcliffe1,Both,washington,spring,below,NA,NA
+3.007,litter,Mg/ha,14,thinburn,radcliffe1,Both,washington,spring,below,NA,NA
+1.02,one_hour,Mg/ha,0,thinburn,radcliffe1,Both,washington,spring,below,NA,NA
+0.899,one_hour,Mg/ha,14,thinburn,radcliffe1,Both,washington,spring,below,NA,NA
+2.491666667,ten_hour,Mg/ha,0,thinburn,radcliffe1,Both,washington,spring,below,NA,NA
+5.143333333,ten_hour,Mg/ha,14,thinburn,radcliffe1,Both,washington,spring,below,NA,NA
+4.017,hundred_hour,Mg/ha,0,thinburn,radcliffe1,Both,washington,spring,below,NA,NA
+5.077666667,hundred_hour,Mg/ha,14,thinburn,radcliffe1,Both,washington,spring,below,NA,NA
+77.84733333,thousand_sound,Mg/ha,0,thinburn,radcliffe1,Both,washington,spring,below,NA,NA
+120.212,thousand_sound,Mg/ha,14,thinburn,radcliffe1,Both,washington,spring,below,NA,NA
+52.47766667,thousand_rotten,Mg/ha,0,thinburn,radcliffe1,Both,washington,spring,below,NA,NA
+54.86833333,thousand_rotten,Mg/ha,14,thinburn,radcliffe1,Both,washington,spring,below,NA,NA
+33.9515,basal_area,m2/ha,0,wildfire_low,radcliffe1,Both,washington,spring,below,NA,NA
+25.742,basal_area,m2/ha,8,wildfire_low,radcliffe1,Both,washington,spring,below,NA,NA
+584.8035,density,trees/ha,0,wildfire_low,radcliffe1,Both,washington,spring,below,NA,NA
+254.6175,density,trees/ha,8,wildfire_low,radcliffe1,Both,washington,spring,below,NA,NA
+32.321,qmd,cm,0,wildfire_low,radcliffe1,Both,washington,spring,below,NA,NA
+41.944,qmd,cm,8,wildfire_low,radcliffe1,Both,washington,spring,below,NA,NA
+0.946,duff,Mg/ha,0,wildfire_low,radcliffe1,Both,washington,spring,below,NA,NA
+1.016,duff,Mg/ha,8,wildfire_low,radcliffe1,Both,washington,spring,below,NA,NA
+3.4335,litter,Mg/ha,0,wildfire_low,radcliffe1,Both,washington,spring,below,NA,NA
+2.7885,litter,Mg/ha,8,wildfire_low,radcliffe1,Both,washington,spring,below,NA,NA
+1.334,one_hour,Mg/ha,0,wildfire_low,radcliffe1,Both,washington,spring,below,NA,NA
+3.029,one_hour,Mg/ha,8,wildfire_low,radcliffe1,Both,washington,spring,below,NA,NA
+2.3925,ten_hour,Mg/ha,0,wildfire_low,radcliffe1,Both,washington,spring,below,NA,NA
+5.271,ten_hour,Mg/ha,8,wildfire_low,radcliffe1,Both,washington,spring,below,NA,NA
+2.5515,hundred_hour,Mg/ha,0,wildfire_low,radcliffe1,Both,washington,spring,below,NA,NA
+2.8615,hundred_hour,Mg/ha,8,wildfire_low,radcliffe1,Both,washington,spring,below,NA,NA
+36.911,thousand_sound,Mg/ha,0,wildfire_low,radcliffe1,Both,washington,spring,below,NA,NA
+107.1135,thousand_sound,Mg/ha,8,wildfire_low,radcliffe1,Both,washington,spring,below,NA,NA
+16.069,thousand_rotten,Mg/ha,0,wildfire_low,radcliffe1,Both,washington,spring,below,NA,NA
+3.145,thousand_rotten,Mg/ha,8,wildfire_low,radcliffe1,Both,washington,spring,below,NA,NA
 6.608,duff,Mg/ha,1,thinburn,radcliffe2,Both,washington,NA,commercial,NA,NA
 1.285,fwd,Mg/ha,1,thinburn,radcliffe2,Both,washington,NA,commercial,NA,NA
 0.113,herb,Mg/ha,1,thinburn,radcliffe2,Both,washington,NA,commercial,NA,NA
