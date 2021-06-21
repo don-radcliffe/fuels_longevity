@@ -14,6 +14,7 @@ require(here)
 require(dplyr)
 require(tidyr)
 require(ggplot2)
+require(stringr)
 
 import_dir_ma <- here::here('data')
 export_dir_ma <- here::here('plots')
@@ -91,13 +92,14 @@ fwd_table <- factored %>%
                          !is.na(fwd) ~ 1 * fwd))
     
 gg_fwd <- gg_fun(table = fwd_table, variable = fwd) +
-  ggtitle('Fine Woody Debris') +
-  ylab('Fine woody debris (Megagrams per hectare)')
+  ggtitle('Surface twigs (1 - 100 hour fuels)') +
+  ylab('Load (Mg/ha)')
 gg_fwd
 ```
 
 ```{r cwd}
 cwd_table <- factored %>%
+  mutate(variable = str_replace_all(variable, c('thousand_sound' = 'cwd_sound', 'thousand_rotten' = 'cwd_rotten'))) %>% 
   filter(variable == 'cwd' | variable == 'cwd_rotten' | variable == 'cwd_sound') %>%
   ## Unit conversion to Megagrams per hectare.
   mutate(value = 
@@ -112,10 +114,32 @@ cwd_table <- factored %>%
     is.na(cwd) ~ cwd_rotten + cwd_sound,
     !is.na(cwd) ~ cwd * 1))
 
-gg_cwd <- gg_fun(table = cwd_table, variable = cwd) +
+gg_cwd <- gg_fun(table = cwd_table, variable = value) +
   ggtitle('Course Woody Debris') +
   ylab('Course woody debris (Megagrams per hectare)')
 gg_cwd
+```
+
+```{r litterduff}
+litter_duff_table <- factored %>%
+  filter(variable == 'litter' | variable == 'duff' | 
+         variable == 'litterduff') %>%
+  ## Unit conversion to Megagrams per hectare.
+  mutate(value = 
+           case_when(units == 'kg/m2' ~ 10 * value,
+                     units == 'Mg/ha' ~ 1 * value)) %>%
+  mutate(units = 'Mg/ha') %>%
+  ## Aggregating everything to FWD.
+  pivot_wider(names_from = variable, values_from = value, 
+              id_cols = c(study, treatment, years_post, forest_type, region, 
+                          burn_season, thin_type, other)) %>%
+  mutate(litterduff = case_when(is.na(litterduff) ~ litter + duff,
+                         !is.na(litterduff) ~ 1 * litterduff))
+
+gg_ld <- gg_fun(table = litter_duff_table, variable = litterduff) +
+  ggtitle('Litter and duff') +
+  ylab('Load (Mg/ha)')
+gg_ld
 ```
 
 ```{r canopy bulk density}
@@ -140,7 +164,8 @@ gg_cbh
 
 ```{r basal area}
 ba_table <- factored %>%
-  filter(variable == 'basal_area')
+  filter(variable == 'basal_area') %>%
+  filter(value < 100)
 
 gg_ba <- gg_fun(table = ba_table, variable = value) +
   ggtitle('Basal area') + 
