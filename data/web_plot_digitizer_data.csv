@@ -1260,81 +1260,101 @@ value,variable,units,years_post,treatment,study,forest_type,region,burn_season,t
 21.74,canopy_cover,percent,1,thin,vaillant,Ponderosa Pine,sierra_nevada,NA,several,NA,NA
 28.7,canopy_cover,percent,2,thin,vaillant,Ponderosa Pine,sierra_nevada,NA,several,NA,NA
 37.39,canopy_cover,percent,8,thin,vaillant,Ponderosa Pine,sierra_nevada,NA,several,NA,NA
-25.07,basal_area,m2/ha,-1,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-15.4,cwd,Mg/ha,-1,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-503.33,density,trees/ha,-1,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-11.13,fwd,Mg/ha,-1,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-62.5,litterduff,Mg/ha,-1,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-25.47,qmd,cm,-1,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-7.9,cwd,Mg/ha,0,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-3.4,fwd,Mg/ha,0,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-16.03,litterduff,Mg/ha,0,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-7.8,basal_area,m2/ha,1,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-10.83,cwd,Mg/ha,1,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-70,density,trees/ha,1,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-3.07,fwd,Mg/ha,1,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-9.6,litterduff,Mg/ha,1,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-37.6,qmd,cm,1,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-8.67,basal_area,m2/ha,2,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-10.63,cwd,Mg/ha,2,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-93.33,density,trees/ha,2,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-4.7,fwd,Mg/ha,2,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-20.53,litterduff,Mg/ha,2,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-34.87,qmd,cm,2,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-8.27,basal_area,m2/ha,5,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-26.2,cwd,Mg/ha,5,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-93.33,density,trees/ha,5,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-4.7,fwd,Mg/ha,5,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-17.73,litterduff,Mg/ha,5,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-33.5,qmd,cm,5,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-9.67,basal_area,m2/ha,10,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-23.6,cwd,Mg/ha,10,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-96.67,density,trees/ha,10,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-3.97,fwd,Mg/ha,10,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-16.77,litterduff,Mg/ha,10,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-35.77,qmd,cm,10,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-9.6,basal_area,m2/ha,15,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-20.8,cwd,Mg/ha,15,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-123.33,density,trees/ha,15,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-2.7,fwd,Mg/ha,15,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-12.6,litterduff,Mg/ha,15,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-31.17,qmd,cm,15,thin_burn,Radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
-28.02,basal_area,m2/ha,-1,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-7.68,cwd,Mg/ha,-1,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-447.27,density,trees/ha,-1,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-6.35,fwd,Mg/ha,-1,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-47.73,litterduff,Mg/ha,-1,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-29.23,qmd,cm,-1,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-10.58,cwd,Mg/ha,0,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-3.9,fwd,Mg/ha,0,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-29.57,litterduff,Mg/ha,0,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-24.4,basal_area,m2/ha,1,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-14.61,cwd,Mg/ha,1,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-245.45,density,trees/ha,1,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-5.88,fwd,Mg/ha,1,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-27.35,litterduff,Mg/ha,1,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-37.22,qmd,cm,1,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-23.86,basal_area,m2/ha,2,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-12.54,cwd,Mg/ha,2,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-244.55,density,trees/ha,2,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-5.69,fwd,Mg/ha,2,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-22.54,litterduff,Mg/ha,2,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-36.9,qmd,cm,2,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-24.93,basal_area,m2/ha,5,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-15.4,cwd,Mg/ha,5,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-248,density,trees/ha,5,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-7.87,fwd,Mg/ha,5,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-27.32,litterduff,Mg/ha,5,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-37.71,qmd,cm,5,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-25.34,basal_area,m2/ha,10,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-13.75,cwd,Mg/ha,10,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-180,density,trees/ha,10,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-6.82,fwd,Mg/ha,10,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-24.38,litterduff,Mg/ha,10,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-42.94,qmd,cm,10,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-24.79,basal_area,m2/ha,15,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-18.01,cwd,Mg/ha,15,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-168.57,density,trees/ha,15,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-6.03,fwd,Mg/ha,15,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-24.26,litterduff,Mg/ha,15,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
-43.76,qmd,cm,15,thin_burn,Radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+25.07,basal_area,m2/ha,-1,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+15.4,cwd,Mg/ha,-1,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+503.33,density,trees/ha,-1,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+11.13,fwd,Mg/ha,-1,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+62.5,litterduff,Mg/ha,-1,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+25.47,qmd,cm,-1,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+7.9,cwd,Mg/ha,0,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+3.4,fwd,Mg/ha,0,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+16.03,litterduff,Mg/ha,0,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+7.8,basal_area,m2/ha,1,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+10.83,cwd,Mg/ha,1,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+70,density,trees/ha,1,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+3.07,fwd,Mg/ha,1,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+9.6,litterduff,Mg/ha,1,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+37.6,qmd,cm,1,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+8.67,basal_area,m2/ha,2,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+10.63,cwd,Mg/ha,2,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+93.33,density,trees/ha,2,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+4.7,fwd,Mg/ha,2,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+20.53,litterduff,Mg/ha,2,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+34.87,qmd,cm,2,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+8.27,basal_area,m2/ha,5,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+26.2,cwd,Mg/ha,5,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+93.33,density,trees/ha,5,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+4.7,fwd,Mg/ha,5,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+17.73,litterduff,Mg/ha,5,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+33.5,qmd,cm,5,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+9.67,basal_area,m2/ha,10,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+23.6,cwd,Mg/ha,10,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+96.67,density,trees/ha,10,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+3.97,fwd,Mg/ha,10,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+16.77,litterduff,Mg/ha,10,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+35.77,qmd,cm,10,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+9.6,basal_area,m2/ha,15,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+20.8,cwd,Mg/ha,15,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+123.33,density,trees/ha,15,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+2.7,fwd,Mg/ha,15,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+12.6,litterduff,Mg/ha,15,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+31.17,qmd,cm,15,thin_burn,radcliffe3,Ponderosa Pine,washington,mixed,commercial,NA,NA
+28.02,basal_area,m2/ha,-1,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+7.68,cwd,Mg/ha,-1,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+447.27,density,trees/ha,-1,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+6.35,fwd,Mg/ha,-1,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+47.73,litterduff,Mg/ha,-1,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+29.23,qmd,cm,-1,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+10.58,cwd,Mg/ha,0,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+3.9,fwd,Mg/ha,0,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+29.57,litterduff,Mg/ha,0,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+24.4,basal_area,m2/ha,1,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+14.61,cwd,Mg/ha,1,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+245.45,density,trees/ha,1,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+5.88,fwd,Mg/ha,1,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+27.35,litterduff,Mg/ha,1,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+37.22,qmd,cm,1,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+23.86,basal_area,m2/ha,2,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+12.54,cwd,Mg/ha,2,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+244.55,density,trees/ha,2,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+5.69,fwd,Mg/ha,2,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+22.54,litterduff,Mg/ha,2,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+36.9,qmd,cm,2,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+24.93,basal_area,m2/ha,5,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+15.4,cwd,Mg/ha,5,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+248,density,trees/ha,5,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+7.87,fwd,Mg/ha,5,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+27.32,litterduff,Mg/ha,5,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+37.71,qmd,cm,5,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+25.34,basal_area,m2/ha,10,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+13.75,cwd,Mg/ha,10,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+180,density,trees/ha,10,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+6.82,fwd,Mg/ha,10,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+24.38,litterduff,Mg/ha,10,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+42.94,qmd,cm,10,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+24.79,basal_area,m2/ha,15,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+18.01,cwd,Mg/ha,15,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+168.57,density,trees/ha,15,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+6.03,fwd,Mg/ha,15,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+24.26,litterduff,Mg/ha,15,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+43.76,qmd,cm,15,thin_burn,radcliffe3,Mixed Conifer,washington,mixed,commercial,NA,NA
+9.146,canopy_base_height,meters,-1,control,radcliffe1,Both,washington,spring,below,NA,NA
+0.044,canopy_bulk_density,kg/m3,-1,control,radcliffe1,Both,washington,spring,below,NA,NA
+8.232,canopy_base_height,meters,-1,burn,radcliffe1,Both,washington,spring,below,NA,NA
+0.054,canopy_bulk_density,kg/m3,-1,burn,radcliffe1,Both,washington,spring,below,NA,NA
+7.012,canopy_base_height,meters,-1,thin,radcliffe1,Both,washington,spring,below,NA,NA
+0.048,canopy_bulk_density,kg/m3,-1,thin,radcliffe1,Both,washington,spring,below,NA,NA
+5.691,canopy_base_height,meters,-1,thinburn,radcliffe1,Both,washington,spring,below,NA,NA
+0.071,canopy_bulk_density,kg/m3,-1,thinburn,radcliffe1,Both,washington,spring,below,NA,NA
+8.384,canopy_base_height,meters,-1,wildfire,radcliffe1,Both,washington,spring,below,NA,NA
+0.115,canopy_bulk_density,kg/m3,-1,wildfire,radcliffe1,Both,washington,spring,below,NA,NA
+10.976,canopy_base_height,meters,19,control,radcliffe1,Both,washington,spring,below,NA,NA
+0.045,canopy_bulk_density,kg/m3,19,control,radcliffe1,Both,washington,spring,below,NA,NA
+9.909,canopy_base_height,meters,14,burn,radcliffe1,Both,washington,spring,below,NA,NA
+0.057,canopy_bulk_density,kg/m3,14,burn,radcliffe1,Both,washington,spring,below,NA,NA
+6.86,canopy_base_height,meters,17,thin,radcliffe1,Both,washington,spring,below,NA,NA
+0.051,canopy_bulk_density,kg/m3,17,thin,radcliffe1,Both,washington,spring,below,NA,NA
+9.35,canopy_base_height,meters,17,thinburn,radcliffe1,Both,washington,spring,below,NA,NA
+0.032,canopy_bulk_density,kg/m3,17,thinburn,radcliffe1,Both,washington,spring,below,NA,NA
+10.671,canopy_base_height,meters,7,wildfire,radcliffe1,Both,washington,spring,below,NA,NA
+0.071,canopy_bulk_density,kg/m3,7,wildfire,radcliffe1,Both,washington,spring,below,NA,NA

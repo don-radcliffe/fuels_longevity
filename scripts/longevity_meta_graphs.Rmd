@@ -38,8 +38,8 @@ factored <- raw %>%
   mutate(region = factor(region, levels = c('Washington', 'Sierra Nevada', 'Other'))) %>%
   ## Get years_post to the other side of 0.
   mutate(years_post = case_when(
-    years_post == 0 & study != 'Radcliffe3' ~ -1,
-    years_post == 0 & study == 'Radcliffe3' ~ 0.5,
+    years_post == 0 & study != 'radcliffe3' ~ -1,
+    years_post == 0 & study == 'radcliffe3' ~ 0.5,
     TRUE ~ years_post))
 ```
 
@@ -76,9 +76,13 @@ gg_fun <- function(table, variable) {
     scale_color_manual(values = region_colors) +
     coord_cartesian(xlim = c(-0.5, 23)) +
     expand_limits(y = 0) +
+    scale_x_continuous(expand = expansion(mult = c(.1, .04))) +
     xlab('Years after treatment') +
     geom_abline(intercept = 0, slope = 10000000000, lty = 'dotted') +
-    simpletheme
+    theme_bw() +
+    theme(panel.grid.major = element_blank(), 
+                     panel.grid.minor = element_blank(),
+                     panel.background = element_blank())
 }
 ```
 
@@ -153,7 +157,10 @@ gg_ld
 
 ```{r canopy bulk density}
 cbd_table <- factored %>%
-  filter(variable == 'canopy_bulk_density')
+  filter(variable == 'canopy_bulk_density') %>%
+  mutate(value = case_when(
+    units == '100kg/m3' ~ value/100,
+    units == 'kg/m3' ~ value))
 
 gg_cbd <- gg_fun(table = cbd_table, variable = value) +
   ggtitle('Canopy bulk density') +
