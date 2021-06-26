@@ -1358,3 +1358,11 @@ value,variable,units,years_post,treatment,study,forest_type,region,burn_season,t
 0.032,canopy_bulk_density,kg/m3,17,thinburn,radcliffe1,Both,washington,spring,below,NA,NA
 10.671,canopy_base_height,meters,7,wildfire,radcliffe1,Both,washington,spring,below,NA,NA
 0.071,canopy_bulk_density,kg/m3,7,wildfire,radcliffe1,Both,washington,spring,below,NA,NA
+0.036632366,canopy_bulk_density,kg/m3,15,thinburn,radcliffe2,Both,washington,both,commmercial,NA,NA
+14.93902439,canopy_base_height,meters,15,thinburn,radcliffe2,Both,washington,both,commmercial,NA,NA
+0.026097104,canopy_bulk_density,kg/m3,5,thinburn,radcliffe2,Both,washington,both,commmercial,NA,NA
+17.37804878,canopy_base_height,meters,5,thinburn,radcliffe2,Both,washington,both,commmercial,NA,NA
+0.031641018,canopy_bulk_density,kg/m3,10,thinburn,radcliffe2,Both,washington,both,commmercial,NA,NA
+14.32926829,canopy_base_height,meters,10,thinburn,radcliffe2,Both,washington,both,commmercial,NA,NA
+0.029326301,canopy_bulk_density,kg/m3,20,thinburn,radcliffe2,Both,washington,both,commmercial,NA,NA
+14.63414634,canopy_base_height,meters,20,thinburn,radcliffe2,Both,washington,both,commmercial,NA,NA
