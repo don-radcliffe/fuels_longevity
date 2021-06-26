@@ -21,18 +21,26 @@ export_dir_ma <- here::here('plots')
 
 raw <- read.csv(file.path(import_dir_ma, 'web_plot_digitizer_data.csv'))
 factored <- raw %>%
-  filter(treatment != 'wildfire_low' & treatment != 'wildfire') %>%
+  ## Because I labelled NPS data with an underscore.
+  mutate(treatment = str_replace_all(treatment, 'thin_burn', 'thinburn')) %>%
+  ## Noonan-Wright is a subset of Vaillant
+  filter(study != 'noonan-wright') %>%
+  ## We decided we're only going with four treatments
+  filter(treatment == 'control' | treatment == 'burn' | treatment == 'thin' | treatment == 'thinburn') %>%
   mutate(treatment = factor(treatment, 
-         levels = c('control', 'burn', 'thin', 'thinburn',
-                    'control+beetle', 'burn+beetle', 'thin+beetle', 'thinburn+beetle',
-                    'undifferentiated'))) %>%
+         levels = c('control', 'burn', 'thin', 'thinburn'))) %>%
   mutate(forest_type = factor(forest_type, levels = c(
     'Ponderosa Pine', 'Mixed Conifer', 'Both'))) %>%
   mutate(region = case_when(
     region == 'washington' ~ 'Washington',
     region == 'sierra_nevada' ~ 'Sierra Nevada',
     TRUE ~ 'Other')) %>%
-  mutate(region = factor(region, levels = c('Washington', 'Sierra Nevada', 'Other')))
+  mutate(region = factor(region, levels = c('Washington', 'Sierra Nevada', 'Other'))) %>%
+  ## Get years_post to the other side of 0.
+  mutate(years_post = case_when(
+    years_post == 0 & study != 'Radcliffe3' ~ -1,
+    years_post == 0 & study == 'Radcliffe3' ~ 0.5,
+    TRUE ~ years_post))
 ```
 
 Some graphing standardization:
@@ -69,6 +77,7 @@ gg_fun <- function(table, variable) {
     coord_cartesian(xlim = c(-0.5, 23)) +
     expand_limits(y = 0) +
     xlab('Years after treatment') +
+    geom_abline(intercept = 0, slope = 10000000000, lty = 'dotted') +
     simpletheme
 }
 ```
