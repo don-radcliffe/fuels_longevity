@@ -13,7 +13,8 @@ example_data <- read.csv(file.path(import_dir_ma, 'statistical_significance_exam
 
 example_graph <- ggplot(example_data, aes(x = years_post, y = mean_fuel_load, color = Treatment)) +
   geom_errorbar(aes(ymin = lower_bound, ymax = upper_bound), position = position_dodge(width = 1), size = 1.1, width = 0.8) +
-  geom_point(aes(x = years_post, y = mean_fuel_load, color = Treatment), size = 3, position = position_dodge(width = 1)) + 
+  geom_point(aes(x = years_post, y = mean_fuel_load, color = Treatment), size = 3, position = position_dodge(width = 1)) +
+  geom_abline(intercept = 0, slope = 100000000, lty = 'dotted') +
   theme(panel.grid.major = element_blank(), 
         panel.grid.minor = element_blank(),
         panel.background = element_blank()) +
@@ -28,5 +29,4 @@ example_graph <- ggplot(example_data, aes(x = years_post, y = mean_fuel_load, co
   ylab('Fuel load')
 example_graph
 
-ggsave(plot = example_graph, filename = 'graphs/statistical_significance_example_graph.jpg', 
-                      height = 5, width = 9, units = 'in', dpi = 500)
+ggsave(plot = example_graph, filename = 'graphs/statistical_significance_example_graph.jpg', height = 5, width = 9, units = 'in', dpi = 500)

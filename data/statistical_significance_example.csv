@@ -1,13 +1,13 @@
 Treatment,years_post,mean_fuel_load,lower_bound,upper_bound
-Control,-5,40,32,48
-Control,0,40,32,48
+Control,-2,40,32,48
+Control,1,40,32,48
 Control,5,40,32,48
 Control,10,40,32,48
 Control,15,40,32,48
 Control,20,40,32,48
 Control,25,40,32,48
-Treatment,-5,40,32,48
-Treatment,0,15,7,23
+Treatment,-2,40,32,48
+Treatment,1,16,8,24
 Treatment,5,20,12,28
 Treatment,10,25,17,33
 Treatment,15,30,22,38
