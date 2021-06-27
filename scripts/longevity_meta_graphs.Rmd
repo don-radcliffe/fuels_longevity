@@ -17,7 +17,7 @@ require(ggplot2)
 require(stringr)
 
 import_dir_ma <- here::here('data')
-export_dir_ma <- here::here('plots')
+export_dir_ma <- here::here('graphs')
 
 raw <- read.csv(file.path(import_dir_ma, 'web_plot_digitizer_data.csv'))
 factored <- raw %>%
@@ -66,7 +66,7 @@ treatment_colors <- c('control' = 'deepskyblue1',
 
 region_colors <- c('Washington' = 'purple3',
                    'Sierra Nevada' = 'red2',
-                   'Other' = 'gold2')
+                   'Other' = 'gold3')
 
 ## Graphing function with all the repetitive components.
 gg_fun <- function(table, variable) {
@@ -85,6 +85,12 @@ gg_fun <- function(table, variable) {
     theme(panel.grid.major = element_blank(), 
                      panel.grid.minor = element_blank(),
                      panel.background = element_blank())
+}
+
+## ggsave function for consistent formatting
+save_graph <- function(graph, name) {
+    ggsave(plot = graph, device = 'png', filename = file.path(export_dir_ma, paste0(name,'.png')), 
+    height = 4, width = 8, units = 'in', dpi = 300)
 }
 ```
 
@@ -108,15 +114,16 @@ fwd_table <- factored %>%
 
 gg_fwd <- gg_fun(table = fwd_table, variable = fwd) +
   ggtitle('Surface twigs (1 - 100 hour fuels)') +
-  ylab('Load (Mg/ha)')
+  ylab('Megagrams per hectare')
 gg_fwd
 
-ggsave(plot = gg_fwd, device = 'png', filename = 'plots/fwd', 
-       height = 4, width = 8, units = 'in', dpi = 300)
+#save_graph(graph = gg_fwd, name = 'fwd')
 ```
 
 ```{r cwd}
 cwd_table <- factored %>%
+  ## Mission creek numbers are unreasonable
+  filter(study != 'radcliffe1') %>%
   mutate(variable = str_replace_all(variable, c('thousand_sound' = 'cwd_sound', 'thousand_rotten' = 'cwd_rotten'))) %>% 
   filter(variable == 'cwd' | variable == 'cwd_rotten' | variable == 'cwd_sound') %>%
   ## Unit conversion to Megagrams per hectare.
@@ -134,8 +141,10 @@ cwd_table <- factored %>%
 
 gg_cwd <- gg_fun(table = cwd_table, variable = value) +
   ggtitle('Course Woody Debris') +
-  ylab('Course woody debris (Megagrams per hectare)')
+  ylab('Megagrams per hectare')
 gg_cwd
+
+#save_graph(graph = gg_cwd, name = 'cwd')
 ```
 
 ```{r litterduff}
@@ -156,8 +165,10 @@ litter_duff_table <- factored %>%
 
 gg_ld <- gg_fun(table = litter_duff_table, variable = litterduff) +
   ggtitle('Litter and duff') +
-  ylab('Load (Mg/ha)')
+  ylab('Megagrams per hectare')
 gg_ld
+
+#save_graph(graph = gg_ld, name = 'litterduff')
 ```
 
 ```{r canopy bulk density}
@@ -169,8 +180,11 @@ cbd_table <- factored %>%
 
 gg_cbd <- gg_fun(table = cbd_table, variable = value) +
   ggtitle('Canopy bulk density') +
-  ylab('Canopy bulk density (kg/m³)')
+  ylab('Kilograms per meter cubed') +
+  scale_y_continuous(limits = c(0,0.2), breaks = c(0,0.1,0.2))
 gg_cbd
+
+#save_graph(gg_cbd, 'cbd')
 ```
 
 ```{r canopy base height}
@@ -179,8 +193,10 @@ cbh_table <- factored %>%
 
 gg_cbh <- gg_fun(table = cbh_table, variable = value) +
   ggtitle('Canopy base height') +
-  ylab('Canopy base height (meters)')
+  ylab('Meters')
 gg_cbh
+
+#save_graph(gg_cbh, 'cbh')
 ```
 
 ```{r basal area}
@@ -190,8 +206,10 @@ ba_table <- factored %>%
 
 gg_ba <- gg_fun(table = ba_table, variable = value) +
   ggtitle('Basal area') + 
-  ylab('Basal area (m²/ha)')
+  ylab('Meters squared per hectare')
 gg_ba
+
+#save_graph(gg_ba, 'basal_area')
 ```
 
 ```{r density}
@@ -200,8 +218,10 @@ den_table <- factored %>%
 
 gg_den <- gg_fun(table = den_table, variable = value) +
   ggtitle('Density') +
-  ylab('Density (trees per hectare)')
+  ylab('Trees per hectare')
 gg_den
+
+#save_graph(gg_den, 'density')
 ```
 
 ```{r qmd}
@@ -210,6 +230,8 @@ qmd_table <- factored %>%
 
 gg_qmd <- gg_fun(table = qmd_table, variable = value) +
   ggtitle('Quadratic mean diameter') +
-  ylab('Quadratic mean diameter (cm)')
+  ylab('Centimeters')
 gg_qmd
+
+#save_graph(gg_qmd, 'qmd')
 ```
