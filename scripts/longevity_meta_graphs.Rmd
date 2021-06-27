@@ -27,8 +27,9 @@ factored <- raw %>%
   filter(study != 'noonan-wright') %>%
   ## We decided we're only going with four treatments
   filter(treatment == 'control' | treatment == 'burn' | treatment == 'thin' | treatment == 'thinburn') %>%
+   mutate(treatment = str_to_title(treatment)) %>%
   mutate(treatment = factor(treatment, 
-         levels = c('control', 'burn', 'thin', 'thinburn'))) %>%
+         levels = c('Control', 'Burn', 'Thin', 'Thinburn'))) %>%
   mutate(forest_type = factor(forest_type, levels = c(
     'Ponderosa Pine', 'Mixed Conifer', 'Both'))) %>%
   mutate(region = case_when(
@@ -73,7 +74,8 @@ gg_fun <- function(table, variable) {
   ggplot(table, aes(x = years_post, y = !!yvar)) +
     geom_jitter(aes(color = region, shape = forest_type), size = 3.5, alpha = 0.5) +
     facet_wrap(vars(treatment)) +
-    scale_color_manual(values = region_colors) +
+    scale_color_manual(values = region_colors, name = 'Region') +
+    scale_shape_discrete(name = 'Forest Type') +
     coord_cartesian(xlim = c(-0.5, 23)) +
     expand_limits(y = 0) +
     scale_x_continuous(expand = expansion(mult = c(.1, .04))) +
@@ -103,11 +105,14 @@ fwd_table <- factored %>%
                           burn_season, thin_type, other)) %>%
   mutate(fwd = case_when(is.na(fwd) ~ one_hour + ten_hour + hundred_hour,
                          !is.na(fwd) ~ 1 * fwd))
-    
+
 gg_fwd <- gg_fun(table = fwd_table, variable = fwd) +
   ggtitle('Surface twigs (1 - 100 hour fuels)') +
   ylab('Load (Mg/ha)')
 gg_fwd
+
+ggsave(plot = gg_fwd, device = 'png', filename = 'plots/fwd', 
+       height = 4, width = 8, units = 'in', dpi = 300)
 ```
 
 ```{r cwd}
