@@ -21,7 +21,7 @@ example_graph <- ggplot(example_data, aes(x = years_post, y = mean_fuel_load, co
   theme(plot.title = element_text(hjust = 0.5)) +
   theme(axis.line = element_line(size = 0.2, color = 'black')) +
   theme(legend.key=element_blank(), legend.background=element_blank(), legend.title = element_blank()) +
-  scale_color_manual(values = c('royalblue3', 'orangered1')) +
+  scale_color_manual(values = c('gray15', 'gray45')) +
   scale_x_continuous(breaks = c(0, 5, 10, 15, 20, 25)) +
   scale_y_continuous(limits = c(0, 50)) +
   ggtitle('Hypothetical example of statistical significance underestimating treatment longevity') +
