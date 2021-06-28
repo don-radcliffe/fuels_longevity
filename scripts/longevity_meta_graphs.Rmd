@@ -100,7 +100,7 @@ We're going to take this variable by variable since there are different issues w
 fwd_table <- factored %>%
   filter(variable == 'fwd' | variable == 'one_hour' | 
          variable == 'ten_hour' | variable == 'hundred_hour') %>%
-  ## Unit conversion to Megagrams per hectare.
+  ## Un♥it conversion to Megagrams per hectare.
   mutate(value = 
            case_when(units == 'kg/m2' ~ 10 * value,
                      units == 'Mg/ha' ~ 1 * value)) %>%
